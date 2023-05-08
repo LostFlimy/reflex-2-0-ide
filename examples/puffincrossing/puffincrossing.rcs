@@ -1,0 +1,47 @@
+program PuffinCrossing
+{
+clock 0t10ms; 
+const bool ON=true;
+const bool OFF=false;
+const int32 SECOND=100;
+const int32 THIRTY_SECONDS=30*SECOND;
+const int32 MINUTE=60*SECOND;
+
+const int32 BA_FPGA1_U1=0XA110; /* INPUT */
+const int32 BA_FPGA3_U1=0XA910; /* OUTPUT */
+
+input  INPUTS 0 0 8; 
+output OUTPUTS 0 0 8;
+
+
+process WaitingButton{ 
+	bool I_BUTTON = INPUTS[1] shared;
+	bool O_CROSSWALK = OUTPUTS[1] shared;
+  	state Begin {
+    	O_CROSSWALK = ON;
+    	set next state;
+  	}
+  	state CheckButton looped {
+    	if (I_BUTTON) { /* Vehicle ? */
+     	if (process TrafficLightCycle in state inactive) 
+        	start process TrafficLightCycle;
+      	}
+    }
+ }
+
+process TrafficLightCycle {
+  shared O_CROSSWALK from process WaitingButton;                      
+  state Pause1min {
+    O_CROSSWALK = ON;
+    timeout MINUTE set next state;
+  }
+  state LetCrossWalking30sec {
+    O_CROSSWALK = ON;
+    timeout (THIRTY_SECONDS) { 
+      O_CROSSWALK = OFF; /* let highway traffic */
+      stop;
+    }
+  }
+} /* \process */
+
+} /* \PROG */ 

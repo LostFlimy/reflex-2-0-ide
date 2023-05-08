@@ -1,0 +1,316 @@
+grammar ru.iaie.reflex.Reflex with org.eclipse.xtext.common.Terminals
+
+generate reflex "http://www.iaie.ru/reflex/Reflex"
+import "http://www.eclipse.org/emf/2002/Ecore" as ecore
+
+Program:
+	("[" annotations+=Annotation "]")*
+	"program" name=ID "{"
+	clock=ClockDefinition
+	(consts+=Const |
+	enums+=Enum |
+	functions+=Function |
+	globalVars+=GlobalVariable |
+	ports+=Port |
+	processes+=Process)*
+	"}";
+
+ClockDefinition:
+	"clock" (intValue=INTEGER | timeValue=TIME) ";";
+
+Process:
+	("[" annotations+=Annotation "]")*
+	"process" name=ID "{"
+	((imports+=ImportedVariableList | variables+=ProcessVariable) ";")*
+	states+=State*
+	"}";
+
+State:
+	("[" annotations+=Annotation "]")*
+	"state" name=ID (looped?="looped")? "{"
+	stateFunction=StatementSequence
+	(timeoutFunction=TimeoutFunction)?
+	"}";
+
+Annotation:
+	key=AnnotationKey ":" value=STRING | key=AnnotationKey;
+
+AnnotationKey:
+	ID "." ID | ID;
+
+ImportedVariableList:
+	"shared" (variables+=[ProcessVariable] ("," variables+=[ProcessVariable])*) "from" "process" process=[Process];
+
+ProcessVariable:
+	(PhysicalVariable | ProgramVariable) (shared?="shared")?;
+
+GlobalVariable:
+	(PhysicalVariable | ProgramVariable) ";";
+
+PhysicalVariable:
+	type=Type name=ID "=" mapping=PortMapping;
+
+PortMapping:
+	port=[Port] "[" (bit=INTEGER)? "]";
+
+ProgramVariable:
+	type=Type name=ID;
+
+TimeoutFunction:
+	"timeout" (TimeAmountOrRef | "(" TimeAmountOrRef ")") body=Statement;
+
+fragment TimeAmountOrRef:
+	time=TIME | intTime=INTEGER | ref=[IdReference];
+
+Function:
+	returnType=Type name=ID "(" argTypes+=Type ("," argTypes+=Type)* ")" ";";
+
+Port:
+	type=PortType name=ID addr1=INTEGER addr2=INTEGER size=INTEGER ";";
+
+enum PortType:
+	INPUT='input' | OUTPUT='output';
+
+Const:
+	"const" type=Type name=ID "=" value=Expression ";";
+
+Enum:
+	"enum" identifier=ID "{" enumMembers+=EnumMember (',' enumMembers+=EnumMember)* "}";
+
+EnumMember:
+	name=ID ("=" value=Expression)?;
+
+	// Statements
+Statement:
+	{Statement} ";" | CompoundStatement |
+	StartProcStat | StopProcStat | ErrorStat | RestartStat | ResetStat
+	| SetStateStat | IfElseStat | SwitchStat | Expression ";";
+
+StatementSequence:
+	{StatementSequence} statements+=Statement*;
+
+CompoundStatement:
+	{CompoundStatement} "{" statements+=Statement* "}";
+
+IfElseStat:
+	"if" "(" cond=Expression ")"
+	then=Statement
+	(=> "else" else=Statement)?;
+
+SwitchStat:
+	"switch" "(" expr=Expression ")" "{" options+=CaseStat* defaultOption=DefaultStat? "}";
+
+CaseStat:
+	"case" option=Expression ":" "{" SwitchOptionStatSequence "}";
+
+DefaultStat:
+	"default" ":" "{" SwitchOptionStatSequence "}";
+
+fragment SwitchOptionStatSequence:
+	statements+=Statement* hasBreak?=BreakStat?;
+
+BreakStat:
+	"break" ";";
+
+StartProcStat:
+	"start" "process" process=[Process] ";";
+
+StopProcStat:
+	{StopProcStat} "stop" ("process" (process=[Process]))? ";";
+
+ErrorStat:
+	{ErrorStat} "error" ("process" (process=[Process]))? ";";
+
+RestartStat:
+	{RestartStat} "restart" ";";
+
+ResetStat:
+	{ResetStat} "reset" "timer" ";";
+
+SetStateStat:
+	{SetStateStat} "set" ((next?="next" "state") | ("state" state=[State])) ";";
+
+IdReference:
+	PhysicalVariable | ProgramVariable | EnumMember | Const;
+
+	// Expressions
+InfixOp:
+	op=InfixPostfixOp ref=[IdReference];
+
+PostfixOp:
+	ref=[IdReference] op=InfixPostfixOp;
+
+FunctionCall:
+	function=[Function] "(" (args+=Expression ("," args+=Expression)*)? ")";
+
+CheckStateExpression:
+	"process" process=[Process] "in" "state" qualfier=StateQualifier;
+
+enum StateQualifier:
+	ACTIVE="active" | INACTIVE="inactive" | STOP="stop" | ERROR="error";
+
+PrimaryExpression:
+	reference=[IdReference] | {PrimaryExpression} integer=INTEGER | {PrimaryExpression} floating=FLOAT |
+	{PrimaryExpression} bool=BOOL_LITERAL | {PrimaryExpression} time=TIME | "(" nestedExpr=Expression ")";
+
+UnaryExpression:
+	PrimaryExpression |
+	FunctionCall |
+	PostfixOp |
+	InfixOp |
+	unaryOp=UnaryOp right=CastExpression;
+
+CastExpression:
+	UnaryExpression |
+	"(" type=Type ")" right=CastExpression;
+
+MultiplicativeExpression:
+	CastExpression ({MultiplicativeExpression.left=current} mulOp=MultiplicativeOp right=CastExpression)*;
+
+AdditiveExpression:
+	MultiplicativeExpression ({AdditiveExpression.left=current} addOp=AdditiveOp right=AdditiveExpression)*;
+
+ShiftExpression:
+	AdditiveExpression ({ShiftExpression.left=current} shiftOp=ShiftOp right=ShiftExpression)*;
+
+CompareExpression:
+	CheckStateExpression | ShiftExpression ({CompareExpression.left=current} cmpOp=CompareOp right=CompareExpression)*;
+
+EqualityExpression:
+	CompareExpression ({EqualityExpression.left=current} eqCmpOp=CompareEqOp right=EqualityExpression)*;
+
+BitAndExpression:
+	EqualityExpression ({BitAndExpression.left=current} BIT_AND right=BitAndExpression)*;
+
+BitXorExpression:
+	BitAndExpression ({BitXorExpression.left=current} BIT_XOR right=BitXorExpression)*;
+
+BitOrExpression:
+	BitXorExpression ({BitOrExpression.left=current} BIT_OR right=BitOrExpression)*;
+
+LogicalAndExpression:
+	BitOrExpression ({LogicalAndExpression.left=current} LOGICAL_AND right=LogicalAndExpression)*;
+
+LogicalOrExpression:
+	LogicalAndExpression ({LogicalOrExpression.left=current} LOGICAL_OR right=LogicalOrExpression)*;
+
+AssignmentExpression:
+	(assignVar=[IdReference] assignOp=AssignOperator)? expr=LogicalOrExpression;
+
+Expression:
+	AssignmentExpression;
+
+enum InfixPostfixOp:
+	INC="++" | DEC="--";
+
+enum AssignOperator:
+	ASSIGN="=" | MUL='*=' | DIV="/=" | MOD="+=" | SUB="-=" | CIN="<<=" | COUT=">>=" | BIT_AND="&=" | BIT_XOR="^=" |
+	BIT_OR="|=";
+
+enum UnaryOp:
+	PLUS="+" | MINUS="-" | BIT_NOT="~" | LOGICAL_NOT="!";
+
+enum CompareOp:
+	LESS="<" | GREATER=">" | LESS_EQ="=<" | GREATER_EQ=">=";
+
+enum CompareEqOp:
+	EQ="==" | NOT_EQ="!=";
+
+enum ShiftOp:
+	LEFT_SHIFT=">>" | RIGHT_SHIFT="<<";
+
+enum AdditiveOp:
+	PLUS="+" | MINUS="-";
+
+enum MultiplicativeOp:
+	MUL="*" | DIV="/" | MOD="%";
+
+terminal LOGICAL_OR:
+	"||";
+
+terminal LOGICAL_AND:
+	"&&";
+
+terminal BIT_OR:
+	"|";
+
+terminal BIT_XOR:
+	"^";
+
+terminal BIT_AND:
+	"&";
+
+	// Types
+enum Type:
+	VOID_C_TYPE="void" | FLOAT="float" | DOUBLE="double" | INT8="int8" | INT8_U="uint8" | INT16="int16" |
+	INT16_U="uint16" | INT32="int32" | INT32_U="uint32" | INT64="int64" | INT64_U="uint64" | BOOL="bool" | TIME="time";
+
+	// Literals
+terminal INTEGER:
+	SIGN? (HEX | OCTAL | DECIMAL) (LONG | UNSIGNED)?;
+
+terminal FLOAT:
+	DEC_FLOAT | HEX_FLOAT;
+
+terminal fragment DEC_FLOAT:
+	DEC_SEQUENCE? '.' DEC_SEQUENCE (EXPONENT SIGN DEC_SEQUENCE)? (LONG | FLOAT_SUFFIX)?;
+
+terminal fragment HEX_FLOAT:
+	HEX_SEQUENCE? '.' HEX_SEQUENCE (BIN_EXPONENT SIGN DEC_SEQUENCE)? (LONG | FLOAT_SUFFIX)?;
+
+terminal fragment DEC_SEQUENCE:
+	('0'..'9')+;
+
+terminal fragment HEX_SEQUENCE:
+	('0'..'9' | 'a'..'f' | 'A'..'F')+;
+
+terminal fragment BIN_EXPONENT:
+	('p' | 'P');
+
+terminal fragment EXPONENT:
+	'e' | 'E';
+
+terminal fragment SIGN:
+	'+' | '-';
+
+terminal fragment DECIMAL:
+	"0" | ('1'..'9') ('0'..'9')*;
+
+terminal fragment OCTAL:
+	'0' ('0'..'7')+;
+
+terminal fragment HEX:
+	HEX_PREFIX HEX_SEQUENCE;
+
+terminal fragment HEX_PREFIX:
+	'0' ('x' | 'X');
+
+terminal fragment LONG:
+	"L" | "l";
+
+terminal fragment FLOAT_SUFFIX:
+	"F" | "f";
+
+terminal fragment UNSIGNED:
+	"U" | "u";
+
+terminal TIME:
+	("0t" | "0T") (DECIMAL DAY)? (DECIMAL HOUR)? (DECIMAL MINUTE)? (DECIMAL SECOND)? (DECIMAL MILLISECOND)?;
+
+terminal fragment DAY:
+	"D" | "d";
+
+terminal fragment HOUR:
+	"H" | "h";
+
+terminal fragment MINUTE:
+	"M" | "m";
+
+terminal fragment SECOND:
+	"S" | "s";
+
+terminal fragment MILLISECOND:
+	"MS" | "ms";
+
+terminal BOOL_LITERAL returns ecore::EBooleanObject:
+	"true" | "false";

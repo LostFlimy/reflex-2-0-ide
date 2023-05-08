@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="17.0.6" class="java.beans.XMLDecoder">
+ <object class="org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceInfo" id="MarketplaceInfo0">
+  <void property="iuToNodeKey">
+   <void method="put">
+    <string>org.eclipse.cdt</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>https://marketplace.eclipse.org#5578792</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>org.eclipse.cdt.meson</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>https://marketplace.eclipse.org#5578792</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>org.eclipse.cdt.autotools</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>https://marketplace.eclipse.org#5578792</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>org.brainwy.liclipsetext.feature</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>https://marketplace.eclipse.org#2894763</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>org.eclipse.cdt.cmake</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>https://marketplace.eclipse.org#5578792</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="nodeKeyToIU">
+   <void method="put">
+    <string>https://marketplace.eclipse.org#2894763</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>org.brainwy.liclipsetext.feature</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <string>https://marketplace.eclipse.org#5578792</string>
+    <object class="java.util.ArrayList">
+     <void method="add">
+      <string>org.eclipse.cdt</string>
+     </void>
+     <void method="add">
+      <string>org.eclipse.cdt.cmake</string>
+     </void>
+     <void method="add">
+      <string>org.eclipse.cdt.meson</string>
+     </void>
+     <void method="add">
+      <string>org.eclipse.cdt.autotools</string>
+     </void>
+    </object>
+   </void>
+  </void>
+ </object>
+</java>

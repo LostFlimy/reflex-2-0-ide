@@ -1,0 +1,359 @@
+2023-03-11 16:18:35,687 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-03-11 16:19:04,412 [Worker-27: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ru.iaie.reflex.generator:r2c:0.0.1-SNAPSHOT @ D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c\pom.xml.
+2023-03-11 16:19:04,625 [Worker-27: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-11 16:19:04,629 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2023-03-11 16:19:04,648 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-03-11 16:19:04,650 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 37 resources
+2023-03-11 16:19:04,655 [Worker-27: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-11 16:19:04,656 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c\src\test\resources
+2023-03-11 16:20:54,525 [Worker-7: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-11 16:20:54,526 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-11 16:20:54,527 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-11 16:20:54,527 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-11 16:20:54,528 [Worker-7: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-11 16:20:54,529 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c\src\test\resources
+2023-03-11 16:24:08,757 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-10.0.12; built: 2022-09-14T01:54:40.076Z; git: 408d0139887e27a57b54ed52e2d92a36731a7e88; jvm 17.0.6+10
+2023-03-11 16:24:08,778 [Start Help Server] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2023-03-11 16:24:08,799 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@64db50d5{/help,null,AVAILABLE}
+2023-03-11 16:24:08,819 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@72e665cd{HTTP/1.1, (http/1.1)}{127.0.0.1:52939}
+2023-03-11 16:24:08,821 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started Server@71ec435a{STARTING}[10.0.12,sto=0] @347943ms
+2023-03-11 16:30:19,922 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2023-03-11 16:30:24,420 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149 [605])
+2023-03-11 16:30:24,421 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149
+2023-03-11 16:30:24,421 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\aether-connector-okhttp-0.17.8.jar
+2023-03-11 16:30:24,421 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\commons-cli-1.4.jar
+2023-03-11 16:30:24,421 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\commons-io-2.6.jar
+2023-03-11 16:30:24,422 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\commons-lang3-3.8.1.jar
+2023-03-11 16:30:24,422 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\guice-4.2.2-no_aop.jar
+2023-03-11 16:30:24,422 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\jansi-2.4.0.jar
+2023-03-11 16:30:24,422 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-artifact-3.8.6.jar
+2023-03-11 16:30:24,422 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-builder-support-3.8.6.jar
+2023-03-11 16:30:24,422 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-compat-3.8.6.jar
+2023-03-11 16:30:24,422 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-core-3.8.6.jar
+2023-03-11 16:30:24,422 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-embedder-3.8.6.jar
+2023-03-11 16:30:24,423 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-model-3.8.6.jar
+2023-03-11 16:30:24,423 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-model-builder-3.8.6.jar
+2023-03-11 16:30:24,423 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-plugin-api-3.8.6.jar
+2023-03-11 16:30:24,423 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-repository-metadata-3.8.6.jar
+2023-03-11 16:30:24,423 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-api-1.6.3.jar
+2023-03-11 16:30:24,423 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-connector-basic-1.6.3.jar
+2023-03-11 16:30:24,423 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-impl-1.6.3.jar
+2023-03-11 16:30:24,423 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-provider-3.8.6.jar
+2023-03-11 16:30:24,423 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-spi-1.6.3.jar
+2023-03-11 16:30:24,424 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-transport-wagon-1.6.3.jar
+2023-03-11 16:30:24,424 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-util-1.6.3.jar
+2023-03-11 16:30:24,424 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-settings-3.8.6.jar
+2023-03-11 16:30:24,424 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-settings-builder-3.8.6.jar
+2023-03-11 16:30:24,424 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-shared-utils-3.3.4.jar
+2023-03-11 16:30:24,424 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\okhttp-3.14.1.jar
+2023-03-11 16:30:24,424 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\okio-1.17.3.jar
+2023-03-11 16:30:24,424 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\org.eclipse.sisu.inject-0.3.5.jar
+2023-03-11 16:30:24,425 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\org.eclipse.sisu.plexus-0.3.5.jar
+2023-03-11 16:30:24,425 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-build-api-0.0.7.jar
+2023-03-11 16:30:24,425 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-cipher-2.0.jar
+2023-03-11 16:30:24,425 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-classworlds-2.6.0.jar
+2023-03-11 16:30:24,425 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-component-annotations-2.1.0.jar
+2023-03-11 16:30:24,425 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-interpolation-1.26.jar
+2023-03-11 16:30:24,425 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-sec-dispatcher-2.0.jar
+2023-03-11 16:30:24,425 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-utils-3.3.1.jar
+2023-03-11 16:30:24,425 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\wagon-file-3.5.1.jar
+2023-03-11 16:30:24,426 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\wagon-provider-api-3.5.1.jar
+2023-03-11 16:30:24,426 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava_30.1.0.v20221112-0806 [10])
+2023-03-11 16:30:24,426 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\com.google.guava_30.1.0.v20221112-0806.jar
+2023-03-11 16:30:24,426 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=slf4j.api_1.7.36 [917])
+2023-03-11 16:30:24,427 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\slf4j.api_1.7.36.jar
+2023-03-11 16:30:24,427 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.inject_1.0.0.v20220405-0441 [32])
+2023-03-11 16:30:24,427 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\javax.inject_1.0.0.v20220405-0441.jar
+2023-03-11 16:30:24,427 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.annotation_1.3.5.v20221112-0806 [30])
+2023-03-11 16:30:24,427 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\javax.annotation_1.3.5.v20221112-0806.jar
+2023-03-11 16:30:24,429 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c":
+2023-03-11 16:30:24,429 [Worker-12: Launching ru.iaie.reflex.generator.r2c] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always install
+2023-03-11 16:31:32,327 [Worker-13: Building] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2023-03-11 16:31:32,329 [Worker-13: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-11 16:31:32,330 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2023-03-11 16:31:32,331 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-03-11 16:31:32,333 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 37 resources
+2023-03-11 16:31:32,336 [Worker-13: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-11 16:31:32,337 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c\src\test\resources
+2023-03-11 16:32:59,512 [Worker-33: Building] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2023-03-11 16:32:59,516 [Worker-33: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-11 16:32:59,517 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-11 16:32:59,517 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-11 16:32:59,517 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-11 16:32:59,518 [Worker-33: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-11 16:32:59,519 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c\src\test\resources
+2023-03-11 16:36:40,359 [Worker-34: Building] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2023-03-11 16:36:40,361 [Worker-34: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-11 16:36:40,362 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2023-03-11 16:36:40,364 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-03-11 16:36:40,365 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 37 resources
+2023-03-11 16:36:40,369 [Worker-34: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-11 16:36:40,369 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c\src\test\resources
+2023-03-11 16:36:54,311 [Worker-35: Building] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2023-03-11 16:36:54,313 [Worker-35: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-11 16:36:54,314 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2023-03-11 16:36:54,315 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-03-11 16:36:54,316 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 37 resources
+2023-03-11 16:36:54,319 [Worker-35: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-11 16:36:54,320 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c\src\test\resources
+2023-03-11 16:41:25,802 [Worker-12: Building] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2023-03-11 16:41:25,804 [Worker-12: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-11 16:41:25,804 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-11 16:41:25,804 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-11 16:41:25,805 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-11 16:41:25,806 [Worker-12: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-11 16:41:25,806 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c\src\test\resources
+2023-03-11 16:46:39,167 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped Server@71ec435a{STOPPING}[10.0.12,sto=0]
+2023-03-11 16:46:39,169 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@72e665cd{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
+2023-03-11 16:46:39,174 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@64db50d5{/help,null,STOPPED}
+2023-03-11 19:26:35,683 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-03-11 20:14:47,856 [Worker-33: Building] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2023-03-11 20:14:48,022 [Worker-33: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-11 20:14:48,027 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2023-03-11 20:14:48,033 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-03-11 20:14:48,034 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 37 resources
+2023-03-11 20:14:48,043 [Worker-33: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-11 20:14:48,044 [Worker-33: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c\src\test\resources
+2023-03-11 20:15:53,560 [Worker-14: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-03-11 20:18:21,808 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-03-11 20:19:07,699 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-11 20:19:07,704 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2023-03-11 20:19:07,709 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-03-11 20:19:07,712 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 37 resources
+2023-03-11 20:19:07,717 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-11 20:19:07,718 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c\src\test\resources
+2023-03-11 20:20:20,012 [Worker-10: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-11 20:20:20,016 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2023-03-11 20:20:20,017 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-03-11 20:20:20,018 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 37 resources
+2023-03-11 20:20:20,023 [Worker-10: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-11 20:20:20,023 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c\src\test\resources
+2023-03-11 20:21:17,466 [Worker-8: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-11 20:21:17,467 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-11 20:21:17,467 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-11 20:21:17,467 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-11 20:21:17,468 [Worker-8: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-11 20:21:17,469 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c\src\test\resources
+2023-03-11 20:21:41,576 [Worker-20: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-11 20:21:41,577 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-11 20:21:41,577 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-11 20:21:41,578 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-11 20:21:41,579 [Worker-20: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-11 20:21:41,580 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c\src\test\resources
+2023-03-11 20:22:11,460 [Worker-27: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-11 20:22:11,461 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-11 20:22:11,461 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-11 20:22:11,461 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-11 20:22:11,463 [Worker-27: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-11 20:22:11,463 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c\src\test\resources
+2023-03-11 20:22:33,529 [Worker-23: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-11 20:22:33,529 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-11 20:22:33,529 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-11 20:22:33,529 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-11 20:22:33,531 [Worker-23: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-11 20:22:33,532 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c\src\test\resources
+2023-03-12 19:01:13,994 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-03-12 19:15:54,244 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2023-03-12 19:15:57,587 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149 [605])
+2023-03-12 19:15:57,589 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149
+2023-03-12 19:15:57,590 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\aether-connector-okhttp-0.17.8.jar
+2023-03-12 19:15:57,590 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\commons-cli-1.4.jar
+2023-03-12 19:15:57,590 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\commons-io-2.6.jar
+2023-03-12 19:15:57,590 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\commons-lang3-3.8.1.jar
+2023-03-12 19:15:57,591 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\guice-4.2.2-no_aop.jar
+2023-03-12 19:15:57,591 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\jansi-2.4.0.jar
+2023-03-12 19:15:57,591 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-artifact-3.8.6.jar
+2023-03-12 19:15:57,591 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-builder-support-3.8.6.jar
+2023-03-12 19:15:57,591 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-compat-3.8.6.jar
+2023-03-12 19:15:57,592 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-core-3.8.6.jar
+2023-03-12 19:15:57,592 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-embedder-3.8.6.jar
+2023-03-12 19:15:57,592 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-model-3.8.6.jar
+2023-03-12 19:15:57,592 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-model-builder-3.8.6.jar
+2023-03-12 19:15:57,592 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-plugin-api-3.8.6.jar
+2023-03-12 19:15:57,592 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-repository-metadata-3.8.6.jar
+2023-03-12 19:15:57,592 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-api-1.6.3.jar
+2023-03-12 19:15:57,592 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-connector-basic-1.6.3.jar
+2023-03-12 19:15:57,593 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-impl-1.6.3.jar
+2023-03-12 19:15:57,593 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-provider-3.8.6.jar
+2023-03-12 19:15:57,593 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-spi-1.6.3.jar
+2023-03-12 19:15:57,593 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-transport-wagon-1.6.3.jar
+2023-03-12 19:15:57,593 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-util-1.6.3.jar
+2023-03-12 19:15:57,593 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-settings-3.8.6.jar
+2023-03-12 19:15:57,593 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-settings-builder-3.8.6.jar
+2023-03-12 19:15:57,593 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-shared-utils-3.3.4.jar
+2023-03-12 19:15:57,594 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\okhttp-3.14.1.jar
+2023-03-12 19:15:57,594 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\okio-1.17.3.jar
+2023-03-12 19:15:57,594 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\org.eclipse.sisu.inject-0.3.5.jar
+2023-03-12 19:15:57,594 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\org.eclipse.sisu.plexus-0.3.5.jar
+2023-03-12 19:15:57,594 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-build-api-0.0.7.jar
+2023-03-12 19:15:57,594 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-cipher-2.0.jar
+2023-03-12 19:15:57,594 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-classworlds-2.6.0.jar
+2023-03-12 19:15:57,594 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-component-annotations-2.1.0.jar
+2023-03-12 19:15:57,595 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-interpolation-1.26.jar
+2023-03-12 19:15:57,595 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-sec-dispatcher-2.0.jar
+2023-03-12 19:15:57,595 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-utils-3.3.1.jar
+2023-03-12 19:15:57,595 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\wagon-file-3.5.1.jar
+2023-03-12 19:15:57,595 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\wagon-provider-api-3.5.1.jar
+2023-03-12 19:15:57,596 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava_30.1.0.v20221112-0806 [10])
+2023-03-12 19:15:57,596 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\com.google.guava_30.1.0.v20221112-0806.jar
+2023-03-12 19:15:57,596 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=slf4j.api_1.7.36 [917])
+2023-03-12 19:15:57,596 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\slf4j.api_1.7.36.jar
+2023-03-12 19:15:57,597 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.inject_1.0.0.v20220405-0441 [32])
+2023-03-12 19:15:57,597 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\javax.inject_1.0.0.v20220405-0441.jar
+2023-03-12 19:15:57,597 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.annotation_1.3.5.v20221112-0806 [30])
+2023-03-12 19:15:57,597 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\javax.annotation_1.3.5.v20221112-0806.jar
+2023-03-12 19:15:57,599 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c":
+2023-03-12 19:15:57,599 [Worker-33: Launching ru.iaie.reflex.generator.r2c] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always install
+2023-03-12 19:15:58,881 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-12 19:15:58,886 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2023-03-12 19:15:58,891 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-03-12 19:15:58,892 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 37 resources
+2023-03-12 19:15:58,900 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-12 19:15:58,901 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c\src\test\resources
+2023-03-12 19:17:51,230 [Worker-31: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-12 19:17:51,231 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-12 19:17:51,231 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-12 19:17:51,231 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-12 19:17:51,233 [Worker-31: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-12 19:17:51,234 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c\src\test\resources
+2023-03-12 19:30:43,440 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2023-03-12 19:30:44,778 [Worker-45: Launching ru.iaie.reflex.generator.r2c] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c":
+2023-03-12 19:30:44,778 [Worker-45: Launching ru.iaie.reflex.generator.r2c] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always install
+2023-03-12 19:30:45,454 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-12 19:30:45,457 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2023-03-12 19:30:45,460 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-03-12 19:30:45,462 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 37 resources
+2023-03-12 19:30:45,467 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-12 19:30:45,468 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c\src\test\resources
+2023-03-12 19:54:11,850 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-12 19:54:11,850 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-12 19:54:11,851 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-12 19:54:11,851 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-12 19:54:11,853 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-12 19:54:11,853 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c\src\test\resources
+2023-03-12 19:58:35,611 [Worker-58: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-12 19:58:35,613 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2023-03-12 19:58:35,614 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-03-12 19:58:35,615 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 37 resources
+2023-03-12 19:58:35,619 [Worker-58: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-12 19:58:35,620 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c\src\test\resources
+2023-03-12 20:13:11,908 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2023-03-12 20:13:13,756 [Worker-64: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-12 20:13:13,758 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2023-03-12 20:13:13,759 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-03-12 20:13:13,761 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 37 resources
+2023-03-12 20:13:13,765 [Worker-64: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-12 20:13:13,766 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c\src\test\resources
+2023-03-12 20:13:14,341 [Worker-66: Launching ru.iaie.reflex.generator.r2c] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c":
+2023-03-12 20:13:14,341 [Worker-66: Launching ru.iaie.reflex.generator.r2c] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always install
+2023-03-12 20:13:15,440 [Worker-67: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-12 20:13:15,441 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2023-03-12 20:13:15,442 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-03-12 20:13:15,444 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 37 resources
+2023-03-12 20:13:15,448 [Worker-67: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-12 20:13:15,449 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c\src\test\resources
+2023-03-16 14:53:01,566 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-03-16 15:07:04,270 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2023-03-16 15:07:07,390 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149 [605])
+2023-03-16 15:07:07,392 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149
+2023-03-16 15:07:07,393 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\aether-connector-okhttp-0.17.8.jar
+2023-03-16 15:07:07,393 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\commons-cli-1.4.jar
+2023-03-16 15:07:07,393 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\commons-io-2.6.jar
+2023-03-16 15:07:07,393 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\commons-lang3-3.8.1.jar
+2023-03-16 15:07:07,393 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\guice-4.2.2-no_aop.jar
+2023-03-16 15:07:07,393 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\jansi-2.4.0.jar
+2023-03-16 15:07:07,393 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-artifact-3.8.6.jar
+2023-03-16 15:07:07,394 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-builder-support-3.8.6.jar
+2023-03-16 15:07:07,394 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-compat-3.8.6.jar
+2023-03-16 15:07:07,394 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-core-3.8.6.jar
+2023-03-16 15:07:07,394 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-embedder-3.8.6.jar
+2023-03-16 15:07:07,394 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-model-3.8.6.jar
+2023-03-16 15:07:07,394 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-model-builder-3.8.6.jar
+2023-03-16 15:07:07,394 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-plugin-api-3.8.6.jar
+2023-03-16 15:07:07,395 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-repository-metadata-3.8.6.jar
+2023-03-16 15:07:07,395 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-api-1.6.3.jar
+2023-03-16 15:07:07,395 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-connector-basic-1.6.3.jar
+2023-03-16 15:07:07,395 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-impl-1.6.3.jar
+2023-03-16 15:07:07,395 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-provider-3.8.6.jar
+2023-03-16 15:07:07,395 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-spi-1.6.3.jar
+2023-03-16 15:07:07,395 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-transport-wagon-1.6.3.jar
+2023-03-16 15:07:07,395 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-resolver-util-1.6.3.jar
+2023-03-16 15:07:07,396 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-settings-3.8.6.jar
+2023-03-16 15:07:07,396 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-settings-builder-3.8.6.jar
+2023-03-16 15:07:07,396 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\maven-shared-utils-3.3.4.jar
+2023-03-16 15:07:07,396 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\okhttp-3.14.1.jar
+2023-03-16 15:07:07,396 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\okio-1.17.3.jar
+2023-03-16 15:07:07,396 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\org.eclipse.sisu.inject-0.3.5.jar
+2023-03-16 15:07:07,396 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\org.eclipse.sisu.plexus-0.3.5.jar
+2023-03-16 15:07:07,396 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-build-api-0.0.7.jar
+2023-03-16 15:07:07,397 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-cipher-2.0.jar
+2023-03-16 15:07:07,397 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-classworlds-2.6.0.jar
+2023-03-16 15:07:07,397 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-component-annotations-2.1.0.jar
+2023-03-16 15:07:07,397 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-interpolation-1.26.jar
+2023-03-16 15:07:07,398 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-sec-dispatcher-2.0.jar
+2023-03-16 15:07:07,398 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-utils-3.3.1.jar
+2023-03-16 15:07:07,398 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\wagon-file-3.5.1.jar
+2023-03-16 15:07:07,398 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\wagon-provider-api-3.5.1.jar
+2023-03-16 15:07:07,399 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava_30.1.0.v20221112-0806 [10])
+2023-03-16 15:07:07,400 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\com.google.guava_30.1.0.v20221112-0806.jar
+2023-03-16 15:07:07,400 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=slf4j.api_1.7.36 [917])
+2023-03-16 15:07:07,400 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\slf4j.api_1.7.36.jar
+2023-03-16 15:07:07,400 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.inject_1.0.0.v20220405-0441 [32])
+2023-03-16 15:07:07,401 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\javax.inject_1.0.0.v20220405-0441.jar
+2023-03-16 15:07:07,401 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.annotation_1.3.5.v20221112-0806 [30])
+2023-03-16 15:07:07,401 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\lisih\.p2\pool\plugins\javax.annotation_1.3.5.v20221112-0806.jar
+2023-03-16 15:07:07,403 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c":
+2023-03-16 15:07:07,403 [Worker-26: Launching ru.iaie.reflex.generator.r2c (1)] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always 
+2023-03-16 15:07:08,693 [Worker-21: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-16 15:07:08,698 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2023-03-16 15:07:08,703 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-03-16 15:07:08,705 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 37 resources
+2023-03-16 15:07:08,715 [Worker-21: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-16 15:07:08,715 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c\src\test\resources
+2023-03-16 15:07:19,776 [Worker-31: Launching ru.iaie.reflex.generator.r2c] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c":
+2023-03-16 15:07:19,776 [Worker-31: Launching ru.iaie.reflex.generator.r2c] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always install
+2023-03-19 19:18:23,256 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-03-19 19:18:27,719 [Worker-11: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-19 19:18:27,722 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2023-03-19 19:18:27,727 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-03-19 19:18:27,731 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 37 resources
+2023-03-19 19:18:27,735 [Worker-11: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-19 19:18:27,736 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c\src\test\resources
+2023-03-19 20:03:01,198 [Worker-40: Launching Eclipse Application] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-19 20:03:01,207 [Worker-40: Launching Eclipse Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2023-03-19 20:03:01,209 [Worker-40: Launching Eclipse Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-03-19 20:03:01,211 [Worker-40: Launching Eclipse Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 37 resources
+2023-03-19 20:03:01,214 [Worker-40: Launching Eclipse Application] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-19 20:03:01,215 [Worker-40: Launching Eclipse Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c\src\test\resources
+2023-03-19 20:29:36,644 [Worker-53: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-19 20:29:36,645 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2023-03-19 20:29:36,647 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-03-19 20:29:36,648 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 37 resources
+2023-03-19 20:29:36,652 [Worker-53: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-19 20:29:36,652 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c\src\test\resources
+2023-03-19 20:29:50,444 [Worker-54: Launching Eclipse Application] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-19 20:29:50,446 [Worker-54: Launching Eclipse Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2023-03-19 20:29:50,447 [Worker-54: Launching Eclipse Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-03-19 20:29:50,448 [Worker-54: Launching Eclipse Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 37 resources
+2023-03-19 20:29:50,452 [Worker-54: Launching Eclipse Application] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-19 20:29:50,453 [Worker-54: Launching Eclipse Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c\src\test\resources
+2023-03-23 14:49:27,524 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-03-23 15:25:05,766 [Worker-35: Launching Eclipse Application] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-23 15:25:05,772 [Worker-35: Launching Eclipse Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2023-03-23 15:25:05,779 [Worker-35: Launching Eclipse Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-03-23 15:25:05,780 [Worker-35: Launching Eclipse Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 37 resources
+2023-03-23 15:25:05,788 [Worker-35: Launching Eclipse Application] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-23 15:25:05,789 [Worker-35: Launching Eclipse Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c\src\test\resources
+2023-03-23 15:25:58,141 [Worker-35: Launching Eclipse Application] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-23 15:25:58,144 [Worker-35: Launching Eclipse Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2023-03-23 15:25:58,147 [Worker-35: Launching Eclipse Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-03-23 15:25:58,149 [Worker-35: Launching Eclipse Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 37 resources
+2023-03-23 15:25:58,154 [Worker-35: Launching Eclipse Application] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-23 15:25:58,154 [Worker-35: Launching Eclipse Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c\src\test\resources
+2023-03-23 15:28:23,825 [Worker-35: Launching Eclipse Application] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-23 15:28:23,827 [Worker-35: Launching Eclipse Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2023-03-23 15:28:23,828 [Worker-35: Launching Eclipse Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-03-23 15:28:23,830 [Worker-35: Launching Eclipse Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 37 resources
+2023-03-23 15:28:23,833 [Worker-35: Launching Eclipse Application] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-03-23 15:28:23,834 [Worker-35: Launching Eclipse Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c\src\test\resources
+2023-04-01 21:13:05,092 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

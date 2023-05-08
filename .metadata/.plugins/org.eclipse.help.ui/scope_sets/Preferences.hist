@@ -1,0 +1,6 @@
+#Sat Mar 11 20:14:00 NOVT 2023
+expression=Preferences
+org.eclipse.help.ui.localSearch.master=true
+org.eclipse.sdk.Google.master=true
+org.eclipse.sdk.Eclipse.master=true
+__DEFAULT__=false
