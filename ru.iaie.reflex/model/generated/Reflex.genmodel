@@ -85,6 +85,9 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Reflex.ecore#//Program/functions"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Reflex.ecore#//Program/globalVars"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Reflex.ecore#//Program/ports"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Reflex.ecore#//Program/vectors"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Reflex.ecore#//Program/registers"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Reflex.ecore#//Program/bits"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Reflex.ecore#//Program/processes"/>
     </genClasses>
     <genClasses ecoreClass="Reflex.ecore#//ClockDefinition">
@@ -96,7 +99,14 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Reflex.ecore#//Process/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Reflex.ecore#//Process/imports"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Reflex.ecore#//Process/variables"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Reflex.ecore#//Process/interrupted"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Reflex.ecore#//Process/states"/>
+    </genClasses>
+    <genClasses ecoreClass="Reflex.ecore#//Interrupted">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Reflex.ecore#//Interrupted/vec"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Reflex.ecore#//Interrupted/reg"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Reflex.ecore#//Interrupted/bit"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Reflex.ecore#//Interrupted/stateFunction"/>
     </genClasses>
     <genClasses ecoreClass="Reflex.ecore#//State">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Reflex.ecore#//State/annotations"/>
@@ -149,6 +159,15 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Reflex.ecore#//Port/addr1"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Reflex.ecore#//Port/addr2"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Reflex.ecore#//Port/size"/>
+    </genClasses>
+    <genClasses ecoreClass="Reflex.ecore#//Vector">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Reflex.ecore#//Vector/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Reflex.ecore#//Bit">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Reflex.ecore#//Bit/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Reflex.ecore#//Register">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Reflex.ecore#//Register/name"/>
     </genClasses>
     <genClasses ecoreClass="Reflex.ecore#//Const">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Reflex.ecore#//Const/type"/>

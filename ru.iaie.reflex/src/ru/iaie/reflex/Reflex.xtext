@@ -12,6 +12,9 @@ Program:
 	functions+=Function |
 	globalVars+=GlobalVariable |
 	ports+=Port |
+	vectors+=Vector |
+	registers+=Register |
+	bits+=Bit |
 	processes+=Process)*
 	"}";
 
@@ -22,8 +25,15 @@ Process:
 	("[" annotations+=Annotation "]")*
 	"process" name=ID "{"
 	((imports+=ImportedVariableList | variables+=ProcessVariable) ";")*
+	interrupted+=Interrupted*
 	states+=State*
 	"}";
+
+Interrupted:
+	"interrupted" vec=[Vector] reg=[Register] bit=[Bit] "{"
+	stateFunction=StatementSequence
+	"}"
+;
 
 State:
 	("[" annotations+=Annotation "]")*
@@ -67,6 +77,18 @@ Function:
 
 Port:
 	type=PortType name=ID addr1=INTEGER addr2=INTEGER size=INTEGER ";";
+
+Vector:
+	"vector" name=ID ";"
+;
+
+Bit:
+	"bit" name=ID ";"
+;
+
+Register:
+	"register" name=ID ";"
+;
 
 enum PortType:
 	INPUT='input' | OUTPUT='output';

@@ -17,6 +17,7 @@ import ru.iaie.reflex.reflex.AdditiveOp;
 import ru.iaie.reflex.reflex.Annotation;
 import ru.iaie.reflex.reflex.AssignOperator;
 import ru.iaie.reflex.reflex.AssignmentExpression;
+import ru.iaie.reflex.reflex.Bit;
 import ru.iaie.reflex.reflex.BitAndExpression;
 import ru.iaie.reflex.reflex.BitOrExpression;
 import ru.iaie.reflex.reflex.BitXorExpression;
@@ -42,6 +43,7 @@ import ru.iaie.reflex.reflex.IfElseStat;
 import ru.iaie.reflex.reflex.ImportedVariableList;
 import ru.iaie.reflex.reflex.InfixOp;
 import ru.iaie.reflex.reflex.InfixPostfixOp;
+import ru.iaie.reflex.reflex.Interrupted;
 import ru.iaie.reflex.reflex.LogicalAndExpression;
 import ru.iaie.reflex.reflex.LogicalOrExpression;
 import ru.iaie.reflex.reflex.MultiplicativeExpression;
@@ -57,6 +59,7 @@ import ru.iaie.reflex.reflex.Program;
 import ru.iaie.reflex.reflex.ProgramVariable;
 import ru.iaie.reflex.reflex.ReflexFactory;
 import ru.iaie.reflex.reflex.ReflexPackage;
+import ru.iaie.reflex.reflex.Register;
 import ru.iaie.reflex.reflex.ResetStat;
 import ru.iaie.reflex.reflex.RestartStat;
 import ru.iaie.reflex.reflex.SetStateStat;
@@ -75,6 +78,7 @@ import ru.iaie.reflex.reflex.TimeoutFunction;
 import ru.iaie.reflex.reflex.Type;
 import ru.iaie.reflex.reflex.UnaryExpression;
 import ru.iaie.reflex.reflex.UnaryOp;
+import ru.iaie.reflex.reflex.Vector;
 
 /**
  * <!-- begin-user-doc -->
@@ -131,6 +135,7 @@ public class ReflexFactoryImpl extends EFactoryImpl implements ReflexFactory
       case ReflexPackage.PROGRAM: return createProgram();
       case ReflexPackage.CLOCK_DEFINITION: return createClockDefinition();
       case ReflexPackage.PROCESS: return createProcess();
+      case ReflexPackage.INTERRUPTED: return createInterrupted();
       case ReflexPackage.STATE: return createState();
       case ReflexPackage.ANNOTATION: return createAnnotation();
       case ReflexPackage.IMPORTED_VARIABLE_LIST: return createImportedVariableList();
@@ -143,6 +148,9 @@ public class ReflexFactoryImpl extends EFactoryImpl implements ReflexFactory
       case ReflexPackage.TIME_AMOUNT_OR_REF: return createTimeAmountOrRef();
       case ReflexPackage.FUNCTION: return createFunction();
       case ReflexPackage.PORT: return createPort();
+      case ReflexPackage.VECTOR: return createVector();
+      case ReflexPackage.BIT: return createBit();
+      case ReflexPackage.REGISTER: return createRegister();
       case ReflexPackage.CONST: return createConst();
       case ReflexPackage.ENUM: return createEnum();
       case ReflexPackage.ENUM_MEMBER: return createEnumMember();
@@ -301,6 +309,18 @@ public class ReflexFactoryImpl extends EFactoryImpl implements ReflexFactory
    * @generated
    */
   @Override
+  public Interrupted createInterrupted()
+  {
+    InterruptedImpl interrupted = new InterruptedImpl();
+    return interrupted;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
   public State createState()
   {
     StateImpl state = new StateImpl();
@@ -437,6 +457,42 @@ public class ReflexFactoryImpl extends EFactoryImpl implements ReflexFactory
   {
     PortImpl port = new PortImpl();
     return port;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public Vector createVector()
+  {
+    VectorImpl vector = new VectorImpl();
+    return vector;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public Bit createBit()
+  {
+    BitImpl bit = new BitImpl();
+    return bit;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public Register createRegister()
+  {
+    RegisterImpl register = new RegisterImpl();
+    return register;
   }
 
   /**

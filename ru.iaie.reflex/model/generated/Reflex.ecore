@@ -17,6 +17,12 @@
         eType="#//GlobalVariable" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="ports" upperBound="-1"
         eType="#//Port" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="vectors" upperBound="-1"
+        eType="#//Vector" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="registers" upperBound="-1"
+        eType="#//Register" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bits" upperBound="-1" eType="#//Bit"
+        containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="processes" upperBound="-1"
         eType="#//Process" containment="true"/>
   </eClassifiers>
@@ -32,8 +38,17 @@
         eType="#//ImportedVariableList" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="variables" upperBound="-1"
         eType="#//ProcessVariable" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interrupted" upperBound="-1"
+        eType="#//Interrupted" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="states" upperBound="-1"
         eType="#//State" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Interrupted">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="vec" eType="#//Vector"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="reg" eType="#//Register"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bit" eType="#//Bit"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="stateFunction" eType="#//StatementSequence"
+        containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="State">
     <eStructuralFeatures xsi:type="ecore:EReference" name="annotations" upperBound="-1"
@@ -93,6 +108,15 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="addr1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="addr2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="size" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Vector">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bit">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Register">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="PortType">
     <eLiterals name="INPUT" literal="input"/>

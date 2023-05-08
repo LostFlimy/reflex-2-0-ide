@@ -51,6 +51,15 @@ public interface ReflexFactory extends EFactory
   Process createProcess();
 
   /**
+   * Returns a new object of class '<em>Interrupted</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Interrupted</em>'.
+   * @generated
+   */
+  Interrupted createInterrupted();
+
+  /**
    * Returns a new object of class '<em>State</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -157,6 +166,33 @@ public interface ReflexFactory extends EFactory
    * @generated
    */
   Port createPort();
+
+  /**
+   * Returns a new object of class '<em>Vector</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Vector</em>'.
+   * @generated
+   */
+  Vector createVector();
+
+  /**
+   * Returns a new object of class '<em>Bit</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Bit</em>'.
+   * @generated
+   */
+  Bit createBit();
+
+  /**
+   * Returns a new object of class '<em>Register</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Register</em>'.
+   * @generated
+   */
+  Register createRegister();
 
   /**
    * Returns a new object of class '<em>Const</em>'.

@@ -255,9 +255,69 @@ ruleProgram returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getProgramAccess().getProcessesProcessParserRuleCall_5_5_0());
+						newCompositeNode(grammarAccess.getProgramAccess().getVectorsVectorParserRuleCall_5_5_0());
 					}
-					lv_processes_12_0=ruleProcess
+					lv_vectors_12_0=ruleVector
+					{
+						if ($current==null) {
+							$current = createModelElementForParent(grammarAccess.getProgramRule());
+						}
+						add(
+							$current,
+							"vectors",
+							lv_vectors_12_0,
+							"ru.iaie.reflex.Reflex.Vector");
+						afterParserOrEnumRuleCall();
+					}
+				)
+			)
+			    |
+			(
+				(
+					{
+						newCompositeNode(grammarAccess.getProgramAccess().getRegistersRegisterParserRuleCall_5_6_0());
+					}
+					lv_registers_13_0=ruleRegister
+					{
+						if ($current==null) {
+							$current = createModelElementForParent(grammarAccess.getProgramRule());
+						}
+						add(
+							$current,
+							"registers",
+							lv_registers_13_0,
+							"ru.iaie.reflex.Reflex.Register");
+						afterParserOrEnumRuleCall();
+					}
+				)
+			)
+			    |
+			(
+				(
+					{
+						newCompositeNode(grammarAccess.getProgramAccess().getBitsBitParserRuleCall_5_7_0());
+					}
+					lv_bits_14_0=ruleBit
+					{
+						if ($current==null) {
+							$current = createModelElementForParent(grammarAccess.getProgramRule());
+						}
+						add(
+							$current,
+							"bits",
+							lv_bits_14_0,
+							"ru.iaie.reflex.Reflex.Bit");
+						afterParserOrEnumRuleCall();
+					}
+				)
+			)
+			    |
+			(
+				(
+					{
+						newCompositeNode(grammarAccess.getProgramAccess().getProcessesProcessParserRuleCall_5_8_0());
+					}
+					lv_processes_15_0=ruleProcess
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getProgramRule());
@@ -265,16 +325,16 @@ ruleProgram returns [EObject current=null]
 						add(
 							$current,
 							"processes",
-							lv_processes_12_0,
+							lv_processes_15_0,
 							"ru.iaie.reflex.Reflex.Process");
 						afterParserOrEnumRuleCall();
 					}
 				)
 			)
 		)*
-		otherlv_13='}'
+		otherlv_16='}'
 		{
-			newLeafNode(otherlv_13, grammarAccess.getProgramAccess().getRightCurlyBracketKeyword_6());
+			newLeafNode(otherlv_16, grammarAccess.getProgramAccess().getRightCurlyBracketKeyword_6());
 		}
 	)
 ;
@@ -466,9 +526,28 @@ ruleProcess returns [EObject current=null]
 		(
 			(
 				{
-					newCompositeNode(grammarAccess.getProcessAccess().getStatesStateParserRuleCall_5_0());
+					newCompositeNode(grammarAccess.getProcessAccess().getInterruptedInterruptedParserRuleCall_5_0());
 				}
-				lv_states_9_0=ruleState
+				lv_interrupted_9_0=ruleInterrupted
+				{
+					if ($current==null) {
+						$current = createModelElementForParent(grammarAccess.getProcessRule());
+					}
+					add(
+						$current,
+						"interrupted",
+						lv_interrupted_9_0,
+						"ru.iaie.reflex.Reflex.Interrupted");
+					afterParserOrEnumRuleCall();
+				}
+			)
+		)*
+		(
+			(
+				{
+					newCompositeNode(grammarAccess.getProcessAccess().getStatesStateParserRuleCall_6_0());
+				}
+				lv_states_10_0=ruleState
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getProcessRule());
@@ -476,15 +555,104 @@ ruleProcess returns [EObject current=null]
 					add(
 						$current,
 						"states",
-						lv_states_9_0,
+						lv_states_10_0,
 						"ru.iaie.reflex.Reflex.State");
 					afterParserOrEnumRuleCall();
 				}
 			)
 		)*
-		otherlv_10='}'
+		otherlv_11='}'
 		{
-			newLeafNode(otherlv_10, grammarAccess.getProcessAccess().getRightCurlyBracketKeyword_6());
+			newLeafNode(otherlv_11, grammarAccess.getProcessAccess().getRightCurlyBracketKeyword_7());
+		}
+	)
+;
+
+// Entry rule entryRuleInterrupted
+entryRuleInterrupted returns [EObject current=null]:
+	{ newCompositeNode(grammarAccess.getInterruptedRule()); }
+	iv_ruleInterrupted=ruleInterrupted
+	{ $current=$iv_ruleInterrupted.current; }
+	EOF;
+
+// Rule Interrupted
+ruleInterrupted returns [EObject current=null]
+@init {
+	enterRule();
+}
+@after {
+	leaveRule();
+}:
+	(
+		otherlv_0='interrupted'
+		{
+			newLeafNode(otherlv_0, grammarAccess.getInterruptedAccess().getInterruptedKeyword_0());
+		}
+		(
+			(
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getInterruptedRule());
+					}
+				}
+				otherlv_1=RULE_ID
+				{
+					newLeafNode(otherlv_1, grammarAccess.getInterruptedAccess().getVecVectorCrossReference_1_0());
+				}
+			)
+		)
+		(
+			(
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getInterruptedRule());
+					}
+				}
+				otherlv_2=RULE_ID
+				{
+					newLeafNode(otherlv_2, grammarAccess.getInterruptedAccess().getRegRegisterCrossReference_2_0());
+				}
+			)
+		)
+		(
+			(
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getInterruptedRule());
+					}
+				}
+				otherlv_3=RULE_ID
+				{
+					newLeafNode(otherlv_3, grammarAccess.getInterruptedAccess().getBitBitCrossReference_3_0());
+				}
+			)
+		)
+		otherlv_4='{'
+		{
+			newLeafNode(otherlv_4, grammarAccess.getInterruptedAccess().getLeftCurlyBracketKeyword_4());
+		}
+		(
+			(
+				{
+					newCompositeNode(grammarAccess.getInterruptedAccess().getStateFunctionStatementSequenceParserRuleCall_5_0());
+				}
+				lv_stateFunction_5_0=ruleStatementSequence
+				{
+					if ($current==null) {
+						$current = createModelElementForParent(grammarAccess.getInterruptedRule());
+					}
+					set(
+						$current,
+						"stateFunction",
+						lv_stateFunction_5_0,
+						"ru.iaie.reflex.Reflex.StatementSequence");
+					afterParserOrEnumRuleCall();
+				}
+			)
+		)
+		otherlv_6='}'
+		{
+			newLeafNode(otherlv_6, grammarAccess.getInterruptedAccess().getRightCurlyBracketKeyword_6());
 		}
 	)
 ;
@@ -1477,6 +1645,141 @@ rulePort returns [EObject current=null]
 		otherlv_5=';'
 		{
 			newLeafNode(otherlv_5, grammarAccess.getPortAccess().getSemicolonKeyword_5());
+		}
+	)
+;
+
+// Entry rule entryRuleVector
+entryRuleVector returns [EObject current=null]:
+	{ newCompositeNode(grammarAccess.getVectorRule()); }
+	iv_ruleVector=ruleVector
+	{ $current=$iv_ruleVector.current; }
+	EOF;
+
+// Rule Vector
+ruleVector returns [EObject current=null]
+@init {
+	enterRule();
+}
+@after {
+	leaveRule();
+}:
+	(
+		otherlv_0='vector'
+		{
+			newLeafNode(otherlv_0, grammarAccess.getVectorAccess().getVectorKeyword_0());
+		}
+		(
+			(
+				lv_name_1_0=RULE_ID
+				{
+					newLeafNode(lv_name_1_0, grammarAccess.getVectorAccess().getNameIDTerminalRuleCall_1_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getVectorRule());
+					}
+					setWithLastConsumed(
+						$current,
+						"name",
+						lv_name_1_0,
+						"org.eclipse.xtext.common.Terminals.ID");
+				}
+			)
+		)
+		otherlv_2=';'
+		{
+			newLeafNode(otherlv_2, grammarAccess.getVectorAccess().getSemicolonKeyword_2());
+		}
+	)
+;
+
+// Entry rule entryRuleBit
+entryRuleBit returns [EObject current=null]:
+	{ newCompositeNode(grammarAccess.getBitRule()); }
+	iv_ruleBit=ruleBit
+	{ $current=$iv_ruleBit.current; }
+	EOF;
+
+// Rule Bit
+ruleBit returns [EObject current=null]
+@init {
+	enterRule();
+}
+@after {
+	leaveRule();
+}:
+	(
+		otherlv_0='bit'
+		{
+			newLeafNode(otherlv_0, grammarAccess.getBitAccess().getBitKeyword_0());
+		}
+		(
+			(
+				lv_name_1_0=RULE_ID
+				{
+					newLeafNode(lv_name_1_0, grammarAccess.getBitAccess().getNameIDTerminalRuleCall_1_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getBitRule());
+					}
+					setWithLastConsumed(
+						$current,
+						"name",
+						lv_name_1_0,
+						"org.eclipse.xtext.common.Terminals.ID");
+				}
+			)
+		)
+		otherlv_2=';'
+		{
+			newLeafNode(otherlv_2, grammarAccess.getBitAccess().getSemicolonKeyword_2());
+		}
+	)
+;
+
+// Entry rule entryRuleRegister
+entryRuleRegister returns [EObject current=null]:
+	{ newCompositeNode(grammarAccess.getRegisterRule()); }
+	iv_ruleRegister=ruleRegister
+	{ $current=$iv_ruleRegister.current; }
+	EOF;
+
+// Rule Register
+ruleRegister returns [EObject current=null]
+@init {
+	enterRule();
+}
+@after {
+	leaveRule();
+}:
+	(
+		otherlv_0='register'
+		{
+			newLeafNode(otherlv_0, grammarAccess.getRegisterAccess().getRegisterKeyword_0());
+		}
+		(
+			(
+				lv_name_1_0=RULE_ID
+				{
+					newLeafNode(lv_name_1_0, grammarAccess.getRegisterAccess().getNameIDTerminalRuleCall_1_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getRegisterRule());
+					}
+					setWithLastConsumed(
+						$current,
+						"name",
+						lv_name_1_0,
+						"org.eclipse.xtext.common.Terminals.ID");
+				}
+			)
+		)
+		otherlv_2=';'
+		{
+			newLeafNode(otherlv_2, grammarAccess.getRegisterAccess().getSemicolonKeyword_2());
 		}
 	)
 ;

@@ -6,6 +6,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\Diplom\reflex"/>
+			<item value="D:\Diplom\reflex\reflex-2-0-ide"/>
 			<item value="D:\Diplom\reflex-2-0-ide"/>
 			<item value="D:\Диплом\reflex-translator-diploma"/>
 		</list>

@@ -13,6 +13,7 @@ import org.eclipse.emf.ecore.EObject;
 import ru.iaie.reflex.reflex.AdditiveExpression;
 import ru.iaie.reflex.reflex.Annotation;
 import ru.iaie.reflex.reflex.AssignmentExpression;
+import ru.iaie.reflex.reflex.Bit;
 import ru.iaie.reflex.reflex.BitAndExpression;
 import ru.iaie.reflex.reflex.BitOrExpression;
 import ru.iaie.reflex.reflex.BitXorExpression;
@@ -35,6 +36,7 @@ import ru.iaie.reflex.reflex.IdReference;
 import ru.iaie.reflex.reflex.IfElseStat;
 import ru.iaie.reflex.reflex.ImportedVariableList;
 import ru.iaie.reflex.reflex.InfixOp;
+import ru.iaie.reflex.reflex.Interrupted;
 import ru.iaie.reflex.reflex.LogicalAndExpression;
 import ru.iaie.reflex.reflex.LogicalOrExpression;
 import ru.iaie.reflex.reflex.MultiplicativeExpression;
@@ -47,6 +49,7 @@ import ru.iaie.reflex.reflex.ProcessVariable;
 import ru.iaie.reflex.reflex.Program;
 import ru.iaie.reflex.reflex.ProgramVariable;
 import ru.iaie.reflex.reflex.ReflexPackage;
+import ru.iaie.reflex.reflex.Register;
 import ru.iaie.reflex.reflex.ResetStat;
 import ru.iaie.reflex.reflex.RestartStat;
 import ru.iaie.reflex.reflex.SetStateStat;
@@ -61,6 +64,7 @@ import ru.iaie.reflex.reflex.SwitchStat;
 import ru.iaie.reflex.reflex.TimeAmountOrRef;
 import ru.iaie.reflex.reflex.TimeoutFunction;
 import ru.iaie.reflex.reflex.UnaryExpression;
+import ru.iaie.reflex.reflex.Vector;
 
 /**
  * <!-- begin-user-doc -->
@@ -141,6 +145,11 @@ public class ReflexAdapterFactory extends AdapterFactoryImpl
         return createProcessAdapter();
       }
       @Override
+      public Adapter caseInterrupted(Interrupted object)
+      {
+        return createInterruptedAdapter();
+      }
+      @Override
       public Adapter caseState(State object)
       {
         return createStateAdapter();
@@ -199,6 +208,21 @@ public class ReflexAdapterFactory extends AdapterFactoryImpl
       public Adapter casePort(Port object)
       {
         return createPortAdapter();
+      }
+      @Override
+      public Adapter caseVector(Vector object)
+      {
+        return createVectorAdapter();
+      }
+      @Override
+      public Adapter caseBit(Bit object)
+      {
+        return createBitAdapter();
+      }
+      @Override
+      public Adapter caseRegister(Register object)
+      {
+        return createRegisterAdapter();
       }
       @Override
       public Adapter caseConst(Const object)
@@ -453,6 +477,21 @@ public class ReflexAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
+   * Creates a new adapter for an object of class '{@link ru.iaie.reflex.reflex.Interrupted <em>Interrupted</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see ru.iaie.reflex.reflex.Interrupted
+   * @generated
+   */
+  public Adapter createInterruptedAdapter()
+  {
+    return null;
+  }
+
+  /**
    * Creates a new adapter for an object of class '{@link ru.iaie.reflex.reflex.State <em>State</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
@@ -628,6 +667,51 @@ public class ReflexAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createPortAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link ru.iaie.reflex.reflex.Vector <em>Vector</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see ru.iaie.reflex.reflex.Vector
+   * @generated
+   */
+  public Adapter createVectorAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link ru.iaie.reflex.reflex.Bit <em>Bit</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see ru.iaie.reflex.reflex.Bit
+   * @generated
+   */
+  public Adapter createBitAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link ru.iaie.reflex.reflex.Register <em>Register</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see ru.iaie.reflex.reflex.Register
+   * @generated
+   */
+  public Adapter createRegisterAdapter()
   {
     return null;
   }

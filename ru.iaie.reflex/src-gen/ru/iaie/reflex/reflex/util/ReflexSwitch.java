@@ -11,6 +11,7 @@ import org.eclipse.emf.ecore.util.Switch;
 import ru.iaie.reflex.reflex.AdditiveExpression;
 import ru.iaie.reflex.reflex.Annotation;
 import ru.iaie.reflex.reflex.AssignmentExpression;
+import ru.iaie.reflex.reflex.Bit;
 import ru.iaie.reflex.reflex.BitAndExpression;
 import ru.iaie.reflex.reflex.BitOrExpression;
 import ru.iaie.reflex.reflex.BitXorExpression;
@@ -33,6 +34,7 @@ import ru.iaie.reflex.reflex.IdReference;
 import ru.iaie.reflex.reflex.IfElseStat;
 import ru.iaie.reflex.reflex.ImportedVariableList;
 import ru.iaie.reflex.reflex.InfixOp;
+import ru.iaie.reflex.reflex.Interrupted;
 import ru.iaie.reflex.reflex.LogicalAndExpression;
 import ru.iaie.reflex.reflex.LogicalOrExpression;
 import ru.iaie.reflex.reflex.MultiplicativeExpression;
@@ -45,6 +47,7 @@ import ru.iaie.reflex.reflex.ProcessVariable;
 import ru.iaie.reflex.reflex.Program;
 import ru.iaie.reflex.reflex.ProgramVariable;
 import ru.iaie.reflex.reflex.ReflexPackage;
+import ru.iaie.reflex.reflex.Register;
 import ru.iaie.reflex.reflex.ResetStat;
 import ru.iaie.reflex.reflex.RestartStat;
 import ru.iaie.reflex.reflex.SetStateStat;
@@ -59,6 +62,7 @@ import ru.iaie.reflex.reflex.SwitchStat;
 import ru.iaie.reflex.reflex.TimeAmountOrRef;
 import ru.iaie.reflex.reflex.TimeoutFunction;
 import ru.iaie.reflex.reflex.UnaryExpression;
+import ru.iaie.reflex.reflex.Vector;
 
 /**
  * <!-- begin-user-doc -->
@@ -141,6 +145,13 @@ public class ReflexSwitch<T> extends Switch<T>
       {
         ru.iaie.reflex.reflex.Process process = (ru.iaie.reflex.reflex.Process)theEObject;
         T result = caseProcess(process);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case ReflexPackage.INTERRUPTED:
+      {
+        Interrupted interrupted = (Interrupted)theEObject;
+        T result = caseInterrupted(interrupted);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -232,6 +243,27 @@ public class ReflexSwitch<T> extends Switch<T>
       {
         Port port = (Port)theEObject;
         T result = casePort(port);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case ReflexPackage.VECTOR:
+      {
+        Vector vector = (Vector)theEObject;
+        T result = caseVector(vector);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case ReflexPackage.BIT:
+      {
+        Bit bit = (Bit)theEObject;
+        T result = caseBit(bit);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case ReflexPackage.REGISTER:
+      {
+        Register register = (Register)theEObject;
+        T result = caseRegister(register);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -684,6 +716,22 @@ public class ReflexSwitch<T> extends Switch<T>
   }
 
   /**
+   * Returns the result of interpreting the object as an instance of '<em>Interrupted</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Interrupted</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseInterrupted(Interrupted object)
+  {
+    return null;
+  }
+
+  /**
    * Returns the result of interpreting the object as an instance of '<em>State</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
@@ -871,6 +919,54 @@ public class ReflexSwitch<T> extends Switch<T>
    * @generated
    */
   public T casePort(Port object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Vector</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Vector</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseVector(Vector object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Bit</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Bit</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseBit(Bit object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Register</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Register</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseRegister(Register object)
   {
     return null;
   }
