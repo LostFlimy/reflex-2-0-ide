@@ -20,6 +20,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link ru.iaie.reflex.reflex.Process#getName <em>Name</em>}</li>
  *   <li>{@link ru.iaie.reflex.reflex.Process#getImports <em>Imports</em>}</li>
  *   <li>{@link ru.iaie.reflex.reflex.Process#getVariables <em>Variables</em>}</li>
+ *   <li>{@link ru.iaie.reflex.reflex.Process#getInterrupted <em>Interrupted</em>}</li>
  *   <li>{@link ru.iaie.reflex.reflex.Process#getStates <em>States</em>}</li>
  * </ul>
  *
@@ -86,6 +87,18 @@ public interface Process extends EObject
    * @generated
    */
   EList<ProcessVariable> getVariables();
+
+  /**
+   * Returns the value of the '<em><b>Interrupted</b></em>' containment reference list.
+   * The list contents are of type {@link ru.iaie.reflex.reflex.Interrupted}.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Interrupted</em>' containment reference list.
+   * @see ru.iaie.reflex.reflex.ReflexPackage#getProcess_Interrupted()
+   * @model containment="true"
+   * @generated
+   */
+  EList<Interrupted> getInterrupted();
 
   /**
    * Returns the value of the '<em><b>States</b></em>' containment reference list.

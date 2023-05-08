@@ -17,6 +17,7 @@ import org.eclipse.xtext.serializer.sequencer.ITransientValueService.ValueTransi
 import ru.iaie.reflex.reflex.AdditiveExpression;
 import ru.iaie.reflex.reflex.Annotation;
 import ru.iaie.reflex.reflex.AssignmentExpression;
+import ru.iaie.reflex.reflex.Bit;
 import ru.iaie.reflex.reflex.BitAndExpression;
 import ru.iaie.reflex.reflex.BitOrExpression;
 import ru.iaie.reflex.reflex.BitXorExpression;
@@ -36,6 +37,7 @@ import ru.iaie.reflex.reflex.FunctionCall;
 import ru.iaie.reflex.reflex.IfElseStat;
 import ru.iaie.reflex.reflex.ImportedVariableList;
 import ru.iaie.reflex.reflex.InfixOp;
+import ru.iaie.reflex.reflex.Interrupted;
 import ru.iaie.reflex.reflex.LogicalAndExpression;
 import ru.iaie.reflex.reflex.LogicalOrExpression;
 import ru.iaie.reflex.reflex.MultiplicativeExpression;
@@ -47,6 +49,7 @@ import ru.iaie.reflex.reflex.PrimaryExpression;
 import ru.iaie.reflex.reflex.Program;
 import ru.iaie.reflex.reflex.ProgramVariable;
 import ru.iaie.reflex.reflex.ReflexPackage;
+import ru.iaie.reflex.reflex.Register;
 import ru.iaie.reflex.reflex.ResetStat;
 import ru.iaie.reflex.reflex.RestartStat;
 import ru.iaie.reflex.reflex.SetStateStat;
@@ -59,6 +62,7 @@ import ru.iaie.reflex.reflex.StopProcStat;
 import ru.iaie.reflex.reflex.SwitchStat;
 import ru.iaie.reflex.reflex.TimeoutFunction;
 import ru.iaie.reflex.reflex.UnaryExpression;
+import ru.iaie.reflex.reflex.Vector;
 import ru.iaie.reflex.services.ReflexGrammarAccess;
 
 @SuppressWarnings("all")
@@ -83,6 +87,9 @@ public class ReflexSemanticSequencer extends AbstractDelegatingSemanticSequencer
 				return; 
 			case ReflexPackage.ASSIGNMENT_EXPRESSION:
 				sequence_AssignmentExpression(context, (AssignmentExpression) semanticObject); 
+				return; 
+			case ReflexPackage.BIT:
+				sequence_Bit(context, (Bit) semanticObject); 
 				return; 
 			case ReflexPackage.BIT_AND_EXPRESSION:
 				sequence_BitAndExpression(context, (BitAndExpression) semanticObject); 
@@ -144,6 +151,9 @@ public class ReflexSemanticSequencer extends AbstractDelegatingSemanticSequencer
 			case ReflexPackage.INFIX_OP:
 				sequence_InfixOp(context, (InfixOp) semanticObject); 
 				return; 
+			case ReflexPackage.INTERRUPTED:
+				sequence_Interrupted(context, (Interrupted) semanticObject); 
+				return; 
 			case ReflexPackage.LOGICAL_AND_EXPRESSION:
 				sequence_LogicalAndExpression(context, (LogicalAndExpression) semanticObject); 
 				return; 
@@ -195,6 +205,9 @@ public class ReflexSemanticSequencer extends AbstractDelegatingSemanticSequencer
 					return; 
 				}
 				else break;
+			case ReflexPackage.REGISTER:
+				sequence_Register(context, (Register) semanticObject); 
+				return; 
 			case ReflexPackage.RESET_STAT:
 				sequence_ResetStat(context, (ResetStat) semanticObject); 
 				return; 
@@ -230,6 +243,9 @@ public class ReflexSemanticSequencer extends AbstractDelegatingSemanticSequencer
 				return; 
 			case ReflexPackage.UNARY_EXPRESSION:
 				sequence_UnaryExpression(context, (UnaryExpression) semanticObject); 
+				return; 
+			case ReflexPackage.VECTOR:
+				sequence_Vector(context, (Vector) semanticObject); 
 				return; 
 			}
 		if (errorAcceptor != null)
@@ -395,6 +411,26 @@ public class ReflexSemanticSequencer extends AbstractDelegatingSemanticSequencer
 		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
 		feeder.accept(grammarAccess.getBitXorExpressionAccess().getBitXorExpressionLeftAction_1_0(), semanticObject.getLeft());
 		feeder.accept(grammarAccess.getBitXorExpressionAccess().getRightBitXorExpressionParserRuleCall_1_2_0(), semanticObject.getRight());
+		feeder.finish();
+	}
+	
+	
+	/**
+	 * <pre>
+	 * Contexts:
+	 *     Bit returns Bit
+	 *
+	 * Constraint:
+	 *     name=ID
+	 * </pre>
+	 */
+	protected void sequence_Bit(ISerializationContext context, Bit semanticObject) {
+		if (errorAcceptor != null) {
+			if (transientValues.isValueTransient(semanticObject, ReflexPackage.Literals.BIT__NAME) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, ReflexPackage.Literals.BIT__NAME));
+		}
+		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
+		feeder.accept(grammarAccess.getBitAccess().getNameIDTerminalRuleCall_1_0(), semanticObject.getName());
 		feeder.finish();
 	}
 	
@@ -795,6 +831,35 @@ public class ReflexSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	/**
 	 * <pre>
 	 * Contexts:
+	 *     Interrupted returns Interrupted
+	 *
+	 * Constraint:
+	 *     (vec=[Vector|ID] reg=[Register|ID] bit=[Bit|ID] stateFunction=StatementSequence)
+	 * </pre>
+	 */
+	protected void sequence_Interrupted(ISerializationContext context, Interrupted semanticObject) {
+		if (errorAcceptor != null) {
+			if (transientValues.isValueTransient(semanticObject, ReflexPackage.Literals.INTERRUPTED__VEC) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, ReflexPackage.Literals.INTERRUPTED__VEC));
+			if (transientValues.isValueTransient(semanticObject, ReflexPackage.Literals.INTERRUPTED__REG) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, ReflexPackage.Literals.INTERRUPTED__REG));
+			if (transientValues.isValueTransient(semanticObject, ReflexPackage.Literals.INTERRUPTED__BIT) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, ReflexPackage.Literals.INTERRUPTED__BIT));
+			if (transientValues.isValueTransient(semanticObject, ReflexPackage.Literals.INTERRUPTED__STATE_FUNCTION) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, ReflexPackage.Literals.INTERRUPTED__STATE_FUNCTION));
+		}
+		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
+		feeder.accept(grammarAccess.getInterruptedAccess().getVecVectorIDTerminalRuleCall_1_0_1(), semanticObject.eGet(ReflexPackage.Literals.INTERRUPTED__VEC, false));
+		feeder.accept(grammarAccess.getInterruptedAccess().getRegRegisterIDTerminalRuleCall_2_0_1(), semanticObject.eGet(ReflexPackage.Literals.INTERRUPTED__REG, false));
+		feeder.accept(grammarAccess.getInterruptedAccess().getBitBitIDTerminalRuleCall_3_0_1(), semanticObject.eGet(ReflexPackage.Literals.INTERRUPTED__BIT, false));
+		feeder.accept(grammarAccess.getInterruptedAccess().getStateFunctionStatementSequenceParserRuleCall_5_0(), semanticObject.getStateFunction());
+		feeder.finish();
+	}
+	
+	
+	/**
+	 * <pre>
+	 * Contexts:
 	 *     LogicalAndExpression returns LogicalAndExpression
 	 *     LogicalAndExpression.LogicalAndExpression_1_0 returns LogicalAndExpression
 	 *     LogicalOrExpression returns LogicalAndExpression
@@ -1083,7 +1148,7 @@ public class ReflexSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	 *     Process returns Process
 	 *
 	 * Constraint:
-	 *     (annotations+=Annotation* name=ID (imports+=ImportedVariableList | variables+=ProcessVariable)* states+=State*)
+	 *     (annotations+=Annotation* name=ID (imports+=ImportedVariableList | variables+=ProcessVariable)* interrupted+=Interrupted* states+=State*)
 	 * </pre>
 	 */
 	protected void sequence_Process(ISerializationContext context, ru.iaie.reflex.reflex.Process semanticObject) {
@@ -1132,6 +1197,9 @@ public class ReflexSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	 *             functions+=Function | 
 	 *             globalVars+=GlobalVariable | 
 	 *             ports+=Port | 
+	 *             vectors+=Vector | 
+	 *             registers+=Register | 
+	 *             bits+=Bit | 
 	 *             processes+=Process
 	 *         )*
 	 *     )
@@ -1139,6 +1207,26 @@ public class ReflexSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	 */
 	protected void sequence_Program(ISerializationContext context, Program semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * <pre>
+	 * Contexts:
+	 *     Register returns Register
+	 *
+	 * Constraint:
+	 *     name=ID
+	 * </pre>
+	 */
+	protected void sequence_Register(ISerializationContext context, Register semanticObject) {
+		if (errorAcceptor != null) {
+			if (transientValues.isValueTransient(semanticObject, ReflexPackage.Literals.REGISTER__NAME) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, ReflexPackage.Literals.REGISTER__NAME));
+		}
+		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
+		feeder.accept(grammarAccess.getRegisterAccess().getNameIDTerminalRuleCall_1_0(), semanticObject.getName());
+		feeder.finish();
 	}
 	
 	
@@ -1389,6 +1477,26 @@ public class ReflexSemanticSequencer extends AbstractDelegatingSemanticSequencer
 		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
 		feeder.accept(grammarAccess.getUnaryExpressionAccess().getUnaryOpUnaryOpEnumRuleCall_4_0_0(), semanticObject.getUnaryOp());
 		feeder.accept(grammarAccess.getUnaryExpressionAccess().getRightCastExpressionParserRuleCall_4_1_0(), semanticObject.getRight());
+		feeder.finish();
+	}
+	
+	
+	/**
+	 * <pre>
+	 * Contexts:
+	 *     Vector returns Vector
+	 *
+	 * Constraint:
+	 *     name=ID
+	 * </pre>
+	 */
+	protected void sequence_Vector(ISerializationContext context, Vector semanticObject) {
+		if (errorAcceptor != null) {
+			if (transientValues.isValueTransient(semanticObject, ReflexPackage.Literals.VECTOR__NAME) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, ReflexPackage.Literals.VECTOR__NAME));
+		}
+		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
+		feeder.accept(grammarAccess.getVectorAccess().getNameIDTerminalRuleCall_1_0(), semanticObject.getName());
 		feeder.finish();
 	}
 	

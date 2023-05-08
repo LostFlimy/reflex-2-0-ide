@@ -21,6 +21,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
 
 import ru.iaie.reflex.reflex.Annotation;
 import ru.iaie.reflex.reflex.ImportedVariableList;
+import ru.iaie.reflex.reflex.Interrupted;
 import ru.iaie.reflex.reflex.ProcessVariable;
 import ru.iaie.reflex.reflex.ReflexPackage;
 import ru.iaie.reflex.reflex.State;
@@ -37,6 +38,7 @@ import ru.iaie.reflex.reflex.State;
  *   <li>{@link ru.iaie.reflex.reflex.impl.ProcessImpl#getName <em>Name</em>}</li>
  *   <li>{@link ru.iaie.reflex.reflex.impl.ProcessImpl#getImports <em>Imports</em>}</li>
  *   <li>{@link ru.iaie.reflex.reflex.impl.ProcessImpl#getVariables <em>Variables</em>}</li>
+ *   <li>{@link ru.iaie.reflex.reflex.impl.ProcessImpl#getInterrupted <em>Interrupted</em>}</li>
  *   <li>{@link ru.iaie.reflex.reflex.impl.ProcessImpl#getStates <em>States</em>}</li>
  * </ul>
  *
@@ -93,6 +95,16 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements ru.iaie
    * @ordered
    */
   protected EList<ProcessVariable> variables;
+
+  /**
+   * The cached value of the '{@link #getInterrupted() <em>Interrupted</em>}' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getInterrupted()
+   * @generated
+   * @ordered
+   */
+  protected EList<Interrupted> interrupted;
 
   /**
    * The cached value of the '{@link #getStates() <em>States</em>}' containment reference list.
@@ -201,6 +213,21 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements ru.iaie
    * @generated
    */
   @Override
+  public EList<Interrupted> getInterrupted()
+  {
+    if (interrupted == null)
+    {
+      interrupted = new EObjectContainmentEList<Interrupted>(Interrupted.class, this, ReflexPackage.PROCESS__INTERRUPTED);
+    }
+    return interrupted;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
   public EList<State> getStates()
   {
     if (states == null)
@@ -226,6 +253,8 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements ru.iaie
         return ((InternalEList<?>)getImports()).basicRemove(otherEnd, msgs);
       case ReflexPackage.PROCESS__VARIABLES:
         return ((InternalEList<?>)getVariables()).basicRemove(otherEnd, msgs);
+      case ReflexPackage.PROCESS__INTERRUPTED:
+        return ((InternalEList<?>)getInterrupted()).basicRemove(otherEnd, msgs);
       case ReflexPackage.PROCESS__STATES:
         return ((InternalEList<?>)getStates()).basicRemove(otherEnd, msgs);
     }
@@ -250,6 +279,8 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements ru.iaie
         return getImports();
       case ReflexPackage.PROCESS__VARIABLES:
         return getVariables();
+      case ReflexPackage.PROCESS__INTERRUPTED:
+        return getInterrupted();
       case ReflexPackage.PROCESS__STATES:
         return getStates();
     }
@@ -282,6 +313,10 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements ru.iaie
         getVariables().clear();
         getVariables().addAll((Collection<? extends ProcessVariable>)newValue);
         return;
+      case ReflexPackage.PROCESS__INTERRUPTED:
+        getInterrupted().clear();
+        getInterrupted().addAll((Collection<? extends Interrupted>)newValue);
+        return;
       case ReflexPackage.PROCESS__STATES:
         getStates().clear();
         getStates().addAll((Collection<? extends State>)newValue);
@@ -312,6 +347,9 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements ru.iaie
       case ReflexPackage.PROCESS__VARIABLES:
         getVariables().clear();
         return;
+      case ReflexPackage.PROCESS__INTERRUPTED:
+        getInterrupted().clear();
+        return;
       case ReflexPackage.PROCESS__STATES:
         getStates().clear();
         return;
@@ -337,6 +375,8 @@ public class ProcessImpl extends MinimalEObjectImpl.Container implements ru.iaie
         return imports != null && !imports.isEmpty();
       case ReflexPackage.PROCESS__VARIABLES:
         return variables != null && !variables.isEmpty();
+      case ReflexPackage.PROCESS__INTERRUPTED:
+        return interrupted != null && !interrupted.isEmpty();
       case ReflexPackage.PROCESS__STATES:
         return states != null && !states.isEmpty();
     }

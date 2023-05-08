@@ -357,3 +357,11 @@
 2023-03-23 15:28:23,833 [Worker-35: Launching Eclipse Application] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
 2023-03-23 15:28:23,834 [Worker-35: Launching Eclipse Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Диплом\reflex-translator-diploma\ru.iaie.reflex.generator.r2c\src\test\resources
 2023-04-01 21:13:05,092 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-05-08 19:23:31,244 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-05-08 19:25:08,654 [Worker-11: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ru.iaie.reflex.generator:r2c:0.0.1-SNAPSHOT @ D:\Diplom\reflex\reflex-2-0-ide\ru.iaie.reflex.generator.r2c\pom.xml.
+2023-05-08 19:25:08,990 [Worker-11: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-05-08 19:25:08,994 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2023-05-08 19:25:08,997 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-05-08 19:25:09,001 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 37 resources
+2023-05-08 19:25:09,006 [Worker-11: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-05-08 19:25:09,006 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Diplom\reflex\reflex-2-0-ide\ru.iaie.reflex.generator.r2c\src\test\resources

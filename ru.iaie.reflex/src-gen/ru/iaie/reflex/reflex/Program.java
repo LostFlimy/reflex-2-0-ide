@@ -24,6 +24,9 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link ru.iaie.reflex.reflex.Program#getFunctions <em>Functions</em>}</li>
  *   <li>{@link ru.iaie.reflex.reflex.Program#getGlobalVars <em>Global Vars</em>}</li>
  *   <li>{@link ru.iaie.reflex.reflex.Program#getPorts <em>Ports</em>}</li>
+ *   <li>{@link ru.iaie.reflex.reflex.Program#getVectors <em>Vectors</em>}</li>
+ *   <li>{@link ru.iaie.reflex.reflex.Program#getRegisters <em>Registers</em>}</li>
+ *   <li>{@link ru.iaie.reflex.reflex.Program#getBits <em>Bits</em>}</li>
  *   <li>{@link ru.iaie.reflex.reflex.Program#getProcesses <em>Processes</em>}</li>
  * </ul>
  *
@@ -148,6 +151,42 @@ public interface Program extends EObject
    * @generated
    */
   EList<Port> getPorts();
+
+  /**
+   * Returns the value of the '<em><b>Vectors</b></em>' containment reference list.
+   * The list contents are of type {@link ru.iaie.reflex.reflex.Vector}.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Vectors</em>' containment reference list.
+   * @see ru.iaie.reflex.reflex.ReflexPackage#getProgram_Vectors()
+   * @model containment="true"
+   * @generated
+   */
+  EList<Vector> getVectors();
+
+  /**
+   * Returns the value of the '<em><b>Registers</b></em>' containment reference list.
+   * The list contents are of type {@link ru.iaie.reflex.reflex.Register}.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Registers</em>' containment reference list.
+   * @see ru.iaie.reflex.reflex.ReflexPackage#getProgram_Registers()
+   * @model containment="true"
+   * @generated
+   */
+  EList<Register> getRegisters();
+
+  /**
+   * Returns the value of the '<em><b>Bits</b></em>' containment reference list.
+   * The list contents are of type {@link ru.iaie.reflex.reflex.Bit}.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Bits</em>' containment reference list.
+   * @see ru.iaie.reflex.reflex.ReflexPackage#getProgram_Bits()
+   * @model containment="true"
+   * @generated
+   */
+  EList<Bit> getBits();
 
   /**
    * Returns the value of the '<em><b>Processes</b></em>' containment reference list.

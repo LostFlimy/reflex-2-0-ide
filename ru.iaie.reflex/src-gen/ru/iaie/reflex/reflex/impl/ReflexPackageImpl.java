@@ -16,6 +16,7 @@ import ru.iaie.reflex.reflex.AdditiveOp;
 import ru.iaie.reflex.reflex.Annotation;
 import ru.iaie.reflex.reflex.AssignOperator;
 import ru.iaie.reflex.reflex.AssignmentExpression;
+import ru.iaie.reflex.reflex.Bit;
 import ru.iaie.reflex.reflex.BitAndExpression;
 import ru.iaie.reflex.reflex.BitOrExpression;
 import ru.iaie.reflex.reflex.BitXorExpression;
@@ -41,6 +42,7 @@ import ru.iaie.reflex.reflex.IfElseStat;
 import ru.iaie.reflex.reflex.ImportedVariableList;
 import ru.iaie.reflex.reflex.InfixOp;
 import ru.iaie.reflex.reflex.InfixPostfixOp;
+import ru.iaie.reflex.reflex.Interrupted;
 import ru.iaie.reflex.reflex.LogicalAndExpression;
 import ru.iaie.reflex.reflex.LogicalOrExpression;
 import ru.iaie.reflex.reflex.MultiplicativeExpression;
@@ -56,6 +58,7 @@ import ru.iaie.reflex.reflex.Program;
 import ru.iaie.reflex.reflex.ProgramVariable;
 import ru.iaie.reflex.reflex.ReflexFactory;
 import ru.iaie.reflex.reflex.ReflexPackage;
+import ru.iaie.reflex.reflex.Register;
 import ru.iaie.reflex.reflex.ResetStat;
 import ru.iaie.reflex.reflex.RestartStat;
 import ru.iaie.reflex.reflex.SetStateStat;
@@ -74,6 +77,7 @@ import ru.iaie.reflex.reflex.TimeoutFunction;
 import ru.iaie.reflex.reflex.Type;
 import ru.iaie.reflex.reflex.UnaryExpression;
 import ru.iaie.reflex.reflex.UnaryOp;
+import ru.iaie.reflex.reflex.Vector;
 
 /**
  * <!-- begin-user-doc -->
@@ -103,6 +107,13 @@ public class ReflexPackageImpl extends EPackageImpl implements ReflexPackage
    * @generated
    */
   private EClass processEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass interruptedEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -187,6 +198,27 @@ public class ReflexPackageImpl extends EPackageImpl implements ReflexPackage
    * @generated
    */
   private EClass portEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass vectorEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass bitEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass registerEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -691,9 +723,42 @@ public class ReflexPackageImpl extends EPackageImpl implements ReflexPackage
    * @generated
    */
   @Override
-  public EReference getProgram_Processes()
+  public EReference getProgram_Vectors()
   {
     return (EReference)programEClass.getEStructuralFeatures().get(8);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EReference getProgram_Registers()
+  {
+    return (EReference)programEClass.getEStructuralFeatures().get(9);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EReference getProgram_Bits()
+  {
+    return (EReference)programEClass.getEStructuralFeatures().get(10);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EReference getProgram_Processes()
+  {
+    return (EReference)programEClass.getEStructuralFeatures().get(11);
   }
 
   /**
@@ -790,9 +855,75 @@ public class ReflexPackageImpl extends EPackageImpl implements ReflexPackage
    * @generated
    */
   @Override
-  public EReference getProcess_States()
+  public EReference getProcess_Interrupted()
   {
     return (EReference)processEClass.getEStructuralFeatures().get(4);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EReference getProcess_States()
+  {
+    return (EReference)processEClass.getEStructuralFeatures().get(5);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EClass getInterrupted()
+  {
+    return interruptedEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EReference getInterrupted_Vec()
+  {
+    return (EReference)interruptedEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EReference getInterrupted_Reg()
+  {
+    return (EReference)interruptedEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EReference getInterrupted_Bit()
+  {
+    return (EReference)interruptedEClass.getEStructuralFeatures().get(2);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EReference getInterrupted_StateFunction()
+  {
+    return (EReference)interruptedEClass.getEStructuralFeatures().get(3);
   }
 
   /**
@@ -1255,6 +1386,72 @@ public class ReflexPackageImpl extends EPackageImpl implements ReflexPackage
   public EAttribute getPort_Size()
   {
     return (EAttribute)portEClass.getEStructuralFeatures().get(4);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EClass getVector()
+  {
+    return vectorEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EAttribute getVector_Name()
+  {
+    return (EAttribute)vectorEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EClass getBit()
+  {
+    return bitEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EAttribute getBit_Name()
+  {
+    return (EAttribute)bitEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EClass getRegister()
+  {
+    return registerEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public EAttribute getRegister_Name()
+  {
+    return (EAttribute)registerEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -2364,6 +2561,9 @@ public class ReflexPackageImpl extends EPackageImpl implements ReflexPackage
     createEReference(programEClass, PROGRAM__FUNCTIONS);
     createEReference(programEClass, PROGRAM__GLOBAL_VARS);
     createEReference(programEClass, PROGRAM__PORTS);
+    createEReference(programEClass, PROGRAM__VECTORS);
+    createEReference(programEClass, PROGRAM__REGISTERS);
+    createEReference(programEClass, PROGRAM__BITS);
     createEReference(programEClass, PROGRAM__PROCESSES);
 
     clockDefinitionEClass = createEClass(CLOCK_DEFINITION);
@@ -2375,7 +2575,14 @@ public class ReflexPackageImpl extends EPackageImpl implements ReflexPackage
     createEAttribute(processEClass, PROCESS__NAME);
     createEReference(processEClass, PROCESS__IMPORTS);
     createEReference(processEClass, PROCESS__VARIABLES);
+    createEReference(processEClass, PROCESS__INTERRUPTED);
     createEReference(processEClass, PROCESS__STATES);
+
+    interruptedEClass = createEClass(INTERRUPTED);
+    createEReference(interruptedEClass, INTERRUPTED__VEC);
+    createEReference(interruptedEClass, INTERRUPTED__REG);
+    createEReference(interruptedEClass, INTERRUPTED__BIT);
+    createEReference(interruptedEClass, INTERRUPTED__STATE_FUNCTION);
 
     stateEClass = createEClass(STATE);
     createEReference(stateEClass, STATE__ANNOTATIONS);
@@ -2430,6 +2637,15 @@ public class ReflexPackageImpl extends EPackageImpl implements ReflexPackage
     createEAttribute(portEClass, PORT__ADDR1);
     createEAttribute(portEClass, PORT__ADDR2);
     createEAttribute(portEClass, PORT__SIZE);
+
+    vectorEClass = createEClass(VECTOR);
+    createEAttribute(vectorEClass, VECTOR__NAME);
+
+    bitEClass = createEClass(BIT);
+    createEAttribute(bitEClass, BIT__NAME);
+
+    registerEClass = createEClass(REGISTER);
+    createEAttribute(registerEClass, REGISTER__NAME);
 
     constEClass = createEClass(CONST);
     createEAttribute(constEClass, CONST__TYPE);
@@ -2646,6 +2862,9 @@ public class ReflexPackageImpl extends EPackageImpl implements ReflexPackage
     initEReference(getProgram_Functions(), this.getFunction(), null, "functions", null, 0, -1, Program.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getProgram_GlobalVars(), this.getGlobalVariable(), null, "globalVars", null, 0, -1, Program.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getProgram_Ports(), this.getPort(), null, "ports", null, 0, -1, Program.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getProgram_Vectors(), this.getVector(), null, "vectors", null, 0, -1, Program.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getProgram_Registers(), this.getRegister(), null, "registers", null, 0, -1, Program.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getProgram_Bits(), this.getBit(), null, "bits", null, 0, -1, Program.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getProgram_Processes(), this.getProcess(), null, "processes", null, 0, -1, Program.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(clockDefinitionEClass, ClockDefinition.class, "ClockDefinition", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -2657,7 +2876,14 @@ public class ReflexPackageImpl extends EPackageImpl implements ReflexPackage
     initEAttribute(getProcess_Name(), ecorePackage.getEString(), "name", null, 0, 1, ru.iaie.reflex.reflex.Process.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getProcess_Imports(), this.getImportedVariableList(), null, "imports", null, 0, -1, ru.iaie.reflex.reflex.Process.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getProcess_Variables(), this.getProcessVariable(), null, "variables", null, 0, -1, ru.iaie.reflex.reflex.Process.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getProcess_Interrupted(), this.getInterrupted(), null, "interrupted", null, 0, -1, ru.iaie.reflex.reflex.Process.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getProcess_States(), this.getState(), null, "states", null, 0, -1, ru.iaie.reflex.reflex.Process.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(interruptedEClass, Interrupted.class, "Interrupted", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEReference(getInterrupted_Vec(), this.getVector(), null, "vec", null, 0, 1, Interrupted.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getInterrupted_Reg(), this.getRegister(), null, "reg", null, 0, 1, Interrupted.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getInterrupted_Bit(), this.getBit(), null, "bit", null, 0, 1, Interrupted.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getInterrupted_StateFunction(), this.getStatementSequence(), null, "stateFunction", null, 0, 1, Interrupted.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(stateEClass, State.class, "State", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getState_Annotations(), this.getAnnotation(), null, "annotations", null, 0, -1, State.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2712,6 +2938,15 @@ public class ReflexPackageImpl extends EPackageImpl implements ReflexPackage
     initEAttribute(getPort_Addr1(), ecorePackage.getEString(), "addr1", null, 0, 1, Port.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getPort_Addr2(), ecorePackage.getEString(), "addr2", null, 0, 1, Port.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getPort_Size(), ecorePackage.getEString(), "size", null, 0, 1, Port.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(vectorEClass, Vector.class, "Vector", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getVector_Name(), ecorePackage.getEString(), "name", null, 0, 1, Vector.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(bitEClass, Bit.class, "Bit", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getBit_Name(), ecorePackage.getEString(), "name", null, 0, 1, Bit.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(registerEClass, Register.class, "Register", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getRegister_Name(), ecorePackage.getEString(), "name", null, 0, 1, Register.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(constEClass, Const.class, "Const", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getConst_Type(), this.getType(), "type", null, 0, 1, Const.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

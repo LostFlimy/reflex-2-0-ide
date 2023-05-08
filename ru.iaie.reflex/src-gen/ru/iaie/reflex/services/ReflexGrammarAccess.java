@@ -51,8 +51,14 @@ public class ReflexGrammarAccess extends AbstractElementFinder.AbstractGrammarEl
 		private final RuleCall cGlobalVarsGlobalVariableParserRuleCall_5_3_0 = (RuleCall)cGlobalVarsAssignment_5_3.eContents().get(0);
 		private final Assignment cPortsAssignment_5_4 = (Assignment)cAlternatives_5.eContents().get(4);
 		private final RuleCall cPortsPortParserRuleCall_5_4_0 = (RuleCall)cPortsAssignment_5_4.eContents().get(0);
-		private final Assignment cProcessesAssignment_5_5 = (Assignment)cAlternatives_5.eContents().get(5);
-		private final RuleCall cProcessesProcessParserRuleCall_5_5_0 = (RuleCall)cProcessesAssignment_5_5.eContents().get(0);
+		private final Assignment cVectorsAssignment_5_5 = (Assignment)cAlternatives_5.eContents().get(5);
+		private final RuleCall cVectorsVectorParserRuleCall_5_5_0 = (RuleCall)cVectorsAssignment_5_5.eContents().get(0);
+		private final Assignment cRegistersAssignment_5_6 = (Assignment)cAlternatives_5.eContents().get(6);
+		private final RuleCall cRegistersRegisterParserRuleCall_5_6_0 = (RuleCall)cRegistersAssignment_5_6.eContents().get(0);
+		private final Assignment cBitsAssignment_5_7 = (Assignment)cAlternatives_5.eContents().get(7);
+		private final RuleCall cBitsBitParserRuleCall_5_7_0 = (RuleCall)cBitsAssignment_5_7.eContents().get(0);
+		private final Assignment cProcessesAssignment_5_8 = (Assignment)cAlternatives_5.eContents().get(8);
+		private final RuleCall cProcessesProcessParserRuleCall_5_8_0 = (RuleCall)cProcessesAssignment_5_8.eContents().get(0);
 		private final Keyword cRightCurlyBracketKeyword_6 = (Keyword)cGroup.eContents().get(6);
 		
 		//Program:
@@ -64,6 +70,9 @@ public class ReflexGrammarAccess extends AbstractElementFinder.AbstractGrammarEl
 		//    functions+=Function |
 		//    globalVars+=GlobalVariable |
 		//    ports+=Port |
+		//    vectors+=Vector |
+		//    registers+=Register |
+		//    bits+=Bit |
 		//    processes+=Process)*
 		//    "}";
 		@Override public ParserRule getRule() { return rule; }
@@ -76,6 +85,9 @@ public class ReflexGrammarAccess extends AbstractElementFinder.AbstractGrammarEl
 		//functions+=Function |
 		//globalVars+=GlobalVariable |
 		//ports+=Port |
+		//vectors+=Vector |
+		//registers+=Register |
+		//bits+=Bit |
 		//processes+=Process)*
 		//"}"
 		public Group getGroup() { return cGroup; }
@@ -118,6 +130,9 @@ public class ReflexGrammarAccess extends AbstractElementFinder.AbstractGrammarEl
 		//functions+=Function |
 		//globalVars+=GlobalVariable |
 		//ports+=Port |
+		//vectors+=Vector |
+		//registers+=Register |
+		//bits+=Bit |
 		//processes+=Process)*
 		public Alternatives getAlternatives_5() { return cAlternatives_5; }
 		
@@ -151,11 +166,29 @@ public class ReflexGrammarAccess extends AbstractElementFinder.AbstractGrammarEl
 		//Port
 		public RuleCall getPortsPortParserRuleCall_5_4_0() { return cPortsPortParserRuleCall_5_4_0; }
 		
+		//vectors+=Vector
+		public Assignment getVectorsAssignment_5_5() { return cVectorsAssignment_5_5; }
+		
+		//Vector
+		public RuleCall getVectorsVectorParserRuleCall_5_5_0() { return cVectorsVectorParserRuleCall_5_5_0; }
+		
+		//registers+=Register
+		public Assignment getRegistersAssignment_5_6() { return cRegistersAssignment_5_6; }
+		
+		//Register
+		public RuleCall getRegistersRegisterParserRuleCall_5_6_0() { return cRegistersRegisterParserRuleCall_5_6_0; }
+		
+		//bits+=Bit
+		public Assignment getBitsAssignment_5_7() { return cBitsAssignment_5_7; }
+		
+		//Bit
+		public RuleCall getBitsBitParserRuleCall_5_7_0() { return cBitsBitParserRuleCall_5_7_0; }
+		
 		//processes+=Process
-		public Assignment getProcessesAssignment_5_5() { return cProcessesAssignment_5_5; }
+		public Assignment getProcessesAssignment_5_8() { return cProcessesAssignment_5_8; }
 		
 		//Process
-		public RuleCall getProcessesProcessParserRuleCall_5_5_0() { return cProcessesProcessParserRuleCall_5_5_0; }
+		public RuleCall getProcessesProcessParserRuleCall_5_8_0() { return cProcessesProcessParserRuleCall_5_8_0; }
 		
 		//"}"
 		public Keyword getRightCurlyBracketKeyword_6() { return cRightCurlyBracketKeyword_6; }
@@ -218,14 +251,17 @@ public class ReflexGrammarAccess extends AbstractElementFinder.AbstractGrammarEl
 		private final Assignment cVariablesAssignment_4_0_1 = (Assignment)cAlternatives_4_0.eContents().get(1);
 		private final RuleCall cVariablesProcessVariableParserRuleCall_4_0_1_0 = (RuleCall)cVariablesAssignment_4_0_1.eContents().get(0);
 		private final Keyword cSemicolonKeyword_4_1 = (Keyword)cGroup_4.eContents().get(1);
-		private final Assignment cStatesAssignment_5 = (Assignment)cGroup.eContents().get(5);
-		private final RuleCall cStatesStateParserRuleCall_5_0 = (RuleCall)cStatesAssignment_5.eContents().get(0);
-		private final Keyword cRightCurlyBracketKeyword_6 = (Keyword)cGroup.eContents().get(6);
+		private final Assignment cInterruptedAssignment_5 = (Assignment)cGroup.eContents().get(5);
+		private final RuleCall cInterruptedInterruptedParserRuleCall_5_0 = (RuleCall)cInterruptedAssignment_5.eContents().get(0);
+		private final Assignment cStatesAssignment_6 = (Assignment)cGroup.eContents().get(6);
+		private final RuleCall cStatesStateParserRuleCall_6_0 = (RuleCall)cStatesAssignment_6.eContents().get(0);
+		private final Keyword cRightCurlyBracketKeyword_7 = (Keyword)cGroup.eContents().get(7);
 		
 		//Process:
 		//    ("[" annotations+=Annotation "]")*
 		//    "process" name=ID "{"
 		//    ((imports+=ImportedVariableList | variables+=ProcessVariable) ";")*
+		//    interrupted+=Interrupted*
 		//    states+=State*
 		//    "}";
 		@Override public ParserRule getRule() { return rule; }
@@ -233,6 +269,7 @@ public class ReflexGrammarAccess extends AbstractElementFinder.AbstractGrammarEl
 		//("[" annotations+=Annotation "]")*
 		//"process" name=ID "{"
 		//((imports+=ImportedVariableList | variables+=ProcessVariable) ";")*
+		//interrupted+=Interrupted*
 		//states+=State*
 		//"}"
 		public Group getGroup() { return cGroup; }
@@ -285,11 +322,89 @@ public class ReflexGrammarAccess extends AbstractElementFinder.AbstractGrammarEl
 		//";"
 		public Keyword getSemicolonKeyword_4_1() { return cSemicolonKeyword_4_1; }
 		
+		//interrupted+=Interrupted*
+		public Assignment getInterruptedAssignment_5() { return cInterruptedAssignment_5; }
+		
+		//Interrupted
+		public RuleCall getInterruptedInterruptedParserRuleCall_5_0() { return cInterruptedInterruptedParserRuleCall_5_0; }
+		
 		//states+=State*
-		public Assignment getStatesAssignment_5() { return cStatesAssignment_5; }
+		public Assignment getStatesAssignment_6() { return cStatesAssignment_6; }
 		
 		//State
-		public RuleCall getStatesStateParserRuleCall_5_0() { return cStatesStateParserRuleCall_5_0; }
+		public RuleCall getStatesStateParserRuleCall_6_0() { return cStatesStateParserRuleCall_6_0; }
+		
+		//"}"
+		public Keyword getRightCurlyBracketKeyword_7() { return cRightCurlyBracketKeyword_7; }
+	}
+	public class InterruptedElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ru.iaie.reflex.Reflex.Interrupted");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cInterruptedKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Assignment cVecAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final CrossReference cVecVectorCrossReference_1_0 = (CrossReference)cVecAssignment_1.eContents().get(0);
+		private final RuleCall cVecVectorIDTerminalRuleCall_1_0_1 = (RuleCall)cVecVectorCrossReference_1_0.eContents().get(1);
+		private final Assignment cRegAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final CrossReference cRegRegisterCrossReference_2_0 = (CrossReference)cRegAssignment_2.eContents().get(0);
+		private final RuleCall cRegRegisterIDTerminalRuleCall_2_0_1 = (RuleCall)cRegRegisterCrossReference_2_0.eContents().get(1);
+		private final Assignment cBitAssignment_3 = (Assignment)cGroup.eContents().get(3);
+		private final CrossReference cBitBitCrossReference_3_0 = (CrossReference)cBitAssignment_3.eContents().get(0);
+		private final RuleCall cBitBitIDTerminalRuleCall_3_0_1 = (RuleCall)cBitBitCrossReference_3_0.eContents().get(1);
+		private final Keyword cLeftCurlyBracketKeyword_4 = (Keyword)cGroup.eContents().get(4);
+		private final Assignment cStateFunctionAssignment_5 = (Assignment)cGroup.eContents().get(5);
+		private final RuleCall cStateFunctionStatementSequenceParserRuleCall_5_0 = (RuleCall)cStateFunctionAssignment_5.eContents().get(0);
+		private final Keyword cRightCurlyBracketKeyword_6 = (Keyword)cGroup.eContents().get(6);
+		
+		//Interrupted:
+		//    "interrupted" vec=[Vector] reg=[Register] bit=[Bit] "{"
+		//    stateFunction=StatementSequence
+		//    "}"
+		//;
+		@Override public ParserRule getRule() { return rule; }
+		
+		//"interrupted" vec=[Vector] reg=[Register] bit=[Bit] "{"
+		//stateFunction=StatementSequence
+		//"}"
+		public Group getGroup() { return cGroup; }
+		
+		//"interrupted"
+		public Keyword getInterruptedKeyword_0() { return cInterruptedKeyword_0; }
+		
+		//vec=[Vector]
+		public Assignment getVecAssignment_1() { return cVecAssignment_1; }
+		
+		//[Vector]
+		public CrossReference getVecVectorCrossReference_1_0() { return cVecVectorCrossReference_1_0; }
+		
+		//ID
+		public RuleCall getVecVectorIDTerminalRuleCall_1_0_1() { return cVecVectorIDTerminalRuleCall_1_0_1; }
+		
+		//reg=[Register]
+		public Assignment getRegAssignment_2() { return cRegAssignment_2; }
+		
+		//[Register]
+		public CrossReference getRegRegisterCrossReference_2_0() { return cRegRegisterCrossReference_2_0; }
+		
+		//ID
+		public RuleCall getRegRegisterIDTerminalRuleCall_2_0_1() { return cRegRegisterIDTerminalRuleCall_2_0_1; }
+		
+		//bit=[Bit]
+		public Assignment getBitAssignment_3() { return cBitAssignment_3; }
+		
+		//[Bit]
+		public CrossReference getBitBitCrossReference_3_0() { return cBitBitCrossReference_3_0; }
+		
+		//ID
+		public RuleCall getBitBitIDTerminalRuleCall_3_0_1() { return cBitBitIDTerminalRuleCall_3_0_1; }
+		
+		//"{"
+		public Keyword getLeftCurlyBracketKeyword_4() { return cLeftCurlyBracketKeyword_4; }
+		
+		//stateFunction=StatementSequence
+		public Assignment getStateFunctionAssignment_5() { return cStateFunctionAssignment_5; }
+		
+		//StatementSequence
+		public RuleCall getStateFunctionStatementSequenceParserRuleCall_5_0() { return cStateFunctionStatementSequenceParserRuleCall_5_0; }
 		
 		//"}"
 		public Keyword getRightCurlyBracketKeyword_6() { return cRightCurlyBracketKeyword_6; }
@@ -888,6 +1003,90 @@ public class ReflexGrammarAccess extends AbstractElementFinder.AbstractGrammarEl
 		
 		//";"
 		public Keyword getSemicolonKeyword_5() { return cSemicolonKeyword_5; }
+	}
+	public class VectorElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ru.iaie.reflex.Reflex.Vector");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cVectorKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final RuleCall cNameIDTerminalRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
+		private final Keyword cSemicolonKeyword_2 = (Keyword)cGroup.eContents().get(2);
+		
+		//Vector:
+		//    "vector" name=ID ";"
+		//;
+		@Override public ParserRule getRule() { return rule; }
+		
+		//"vector" name=ID ";"
+		public Group getGroup() { return cGroup; }
+		
+		//"vector"
+		public Keyword getVectorKeyword_0() { return cVectorKeyword_0; }
+		
+		//name=ID
+		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
+		
+		//ID
+		public RuleCall getNameIDTerminalRuleCall_1_0() { return cNameIDTerminalRuleCall_1_0; }
+		
+		//";"
+		public Keyword getSemicolonKeyword_2() { return cSemicolonKeyword_2; }
+	}
+	public class BitElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ru.iaie.reflex.Reflex.Bit");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cBitKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final RuleCall cNameIDTerminalRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
+		private final Keyword cSemicolonKeyword_2 = (Keyword)cGroup.eContents().get(2);
+		
+		//Bit:
+		//    "bit" name=ID ";"
+		//;
+		@Override public ParserRule getRule() { return rule; }
+		
+		//"bit" name=ID ";"
+		public Group getGroup() { return cGroup; }
+		
+		//"bit"
+		public Keyword getBitKeyword_0() { return cBitKeyword_0; }
+		
+		//name=ID
+		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
+		
+		//ID
+		public RuleCall getNameIDTerminalRuleCall_1_0() { return cNameIDTerminalRuleCall_1_0; }
+		
+		//";"
+		public Keyword getSemicolonKeyword_2() { return cSemicolonKeyword_2; }
+	}
+	public class RegisterElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ru.iaie.reflex.Reflex.Register");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cRegisterKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final RuleCall cNameIDTerminalRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
+		private final Keyword cSemicolonKeyword_2 = (Keyword)cGroup.eContents().get(2);
+		
+		//Register:
+		//    "register" name=ID ";"
+		//;
+		@Override public ParserRule getRule() { return rule; }
+		
+		//"register" name=ID ";"
+		public Group getGroup() { return cGroup; }
+		
+		//"register"
+		public Keyword getRegisterKeyword_0() { return cRegisterKeyword_0; }
+		
+		//name=ID
+		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
+		
+		//ID
+		public RuleCall getNameIDTerminalRuleCall_1_0() { return cNameIDTerminalRuleCall_1_0; }
+		
+		//";"
+		public Keyword getSemicolonKeyword_2() { return cSemicolonKeyword_2; }
 	}
 	public class ConstElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ru.iaie.reflex.Reflex.Const");
@@ -2968,6 +3167,7 @@ public class ReflexGrammarAccess extends AbstractElementFinder.AbstractGrammarEl
 	private final ProgramElements pProgram;
 	private final ClockDefinitionElements pClockDefinition;
 	private final ProcessElements pProcess;
+	private final InterruptedElements pInterrupted;
 	private final StateElements pState;
 	private final AnnotationElements pAnnotation;
 	private final AnnotationKeyElements pAnnotationKey;
@@ -2981,6 +3181,9 @@ public class ReflexGrammarAccess extends AbstractElementFinder.AbstractGrammarEl
 	private final TimeAmountOrRefElements pTimeAmountOrRef;
 	private final FunctionElements pFunction;
 	private final PortElements pPort;
+	private final VectorElements pVector;
+	private final BitElements pBit;
+	private final RegisterElements pRegister;
 	private final PortTypeElements ePortType;
 	private final ConstElements pConst;
 	private final EnumElements pEnum;
@@ -3071,6 +3274,7 @@ public class ReflexGrammarAccess extends AbstractElementFinder.AbstractGrammarEl
 		this.pProgram = new ProgramElements();
 		this.pClockDefinition = new ClockDefinitionElements();
 		this.pProcess = new ProcessElements();
+		this.pInterrupted = new InterruptedElements();
 		this.pState = new StateElements();
 		this.pAnnotation = new AnnotationElements();
 		this.pAnnotationKey = new AnnotationKeyElements();
@@ -3084,6 +3288,9 @@ public class ReflexGrammarAccess extends AbstractElementFinder.AbstractGrammarEl
 		this.pTimeAmountOrRef = new TimeAmountOrRefElements();
 		this.pFunction = new FunctionElements();
 		this.pPort = new PortElements();
+		this.pVector = new VectorElements();
+		this.pBit = new BitElements();
+		this.pRegister = new RegisterElements();
 		this.ePortType = new PortTypeElements();
 		this.pConst = new ConstElements();
 		this.pEnum = new EnumElements();
@@ -3199,6 +3406,9 @@ public class ReflexGrammarAccess extends AbstractElementFinder.AbstractGrammarEl
 	//    functions+=Function |
 	//    globalVars+=GlobalVariable |
 	//    ports+=Port |
+	//    vectors+=Vector |
+	//    registers+=Register |
+	//    bits+=Bit |
 	//    processes+=Process)*
 	//    "}";
 	public ProgramElements getProgramAccess() {
@@ -3223,6 +3433,7 @@ public class ReflexGrammarAccess extends AbstractElementFinder.AbstractGrammarEl
 	//    ("[" annotations+=Annotation "]")*
 	//    "process" name=ID "{"
 	//    ((imports+=ImportedVariableList | variables+=ProcessVariable) ";")*
+	//    interrupted+=Interrupted*
 	//    states+=State*
 	//    "}";
 	public ProcessElements getProcessAccess() {
@@ -3231,6 +3442,19 @@ public class ReflexGrammarAccess extends AbstractElementFinder.AbstractGrammarEl
 	
 	public ParserRule getProcessRule() {
 		return getProcessAccess().getRule();
+	}
+	
+	//Interrupted:
+	//    "interrupted" vec=[Vector] reg=[Register] bit=[Bit] "{"
+	//    stateFunction=StatementSequence
+	//    "}"
+	//;
+	public InterruptedElements getInterruptedAccess() {
+		return pInterrupted;
+	}
+	
+	public ParserRule getInterruptedRule() {
+		return getInterruptedAccess().getRule();
 	}
 	
 	//State:
@@ -3365,6 +3589,39 @@ public class ReflexGrammarAccess extends AbstractElementFinder.AbstractGrammarEl
 	
 	public ParserRule getPortRule() {
 		return getPortAccess().getRule();
+	}
+	
+	//Vector:
+	//    "vector" name=ID ";"
+	//;
+	public VectorElements getVectorAccess() {
+		return pVector;
+	}
+	
+	public ParserRule getVectorRule() {
+		return getVectorAccess().getRule();
+	}
+	
+	//Bit:
+	//    "bit" name=ID ";"
+	//;
+	public BitElements getBitAccess() {
+		return pBit;
+	}
+	
+	public ParserRule getBitRule() {
+		return getBitAccess().getRule();
+	}
+	
+	//Register:
+	//    "register" name=ID ";"
+	//;
+	public RegisterElements getRegisterAccess() {
+		return pRegister;
+	}
+	
+	public ParserRule getRegisterRule() {
+		return getRegisterAccess().getRule();
 	}
 	
 	//enum PortType:
